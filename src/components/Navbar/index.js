@@ -8,22 +8,33 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavBtn,
+  NavBtnLink
 } from "./NavbarElements";
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">Michal Wojcieszak</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks to="about">O mnie</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="collab">Współpraca</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="training-plans">Plany treningowe</NavLinks>
             </NavItem>
           </NavMenu>
+          <NavBtn>
+              <NavBtnLink to="contact">Kontakt</NavBtnLink>
+          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>
