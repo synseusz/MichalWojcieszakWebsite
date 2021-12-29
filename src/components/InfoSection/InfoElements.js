@@ -6,12 +6,13 @@ export const InfoContainer = styled.div`
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
+        height: 100%;
     }
 `
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 100vh;
+    height: 1100px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
@@ -84,5 +85,6 @@ export const Img = styled.img`
     margin: 0 0 10px 0;
     padding-right: 0;
     border-radius: 50px;
+    /*border: 2px outset #01bf71;*/
 
 `

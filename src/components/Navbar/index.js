@@ -13,22 +13,19 @@ import {
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(false)
-
+  const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
-      setScrollNav(true)
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
     }
-    else {
-      setScrollNav(false)
-    }
-  }
+  };
 
   useEffect(() => {
-    window.addEventListener('scroll', changeNav)
-  }, [])
-
+    window.addEventListener("scroll", changeNav);
+  }, []);
 
   return (
     <>
@@ -49,13 +46,40 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">O mnie</NavLinks>
+              <NavLinks
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                O mnie
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="collab">Współpraca</NavLinks>
+              <NavLinks
+                to="training-plans"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Plany Treningowe
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="training-plans">Plany treningowe</NavLinks>
+              <NavLinks
+                to="collab"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Współpraca
+              </NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
