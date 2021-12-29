@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "../ButtonElement";
-import { homeObjOne } from "./Data";
 import {
   InfoContainer,
   InfoWrapper,
