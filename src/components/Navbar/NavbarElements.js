@@ -28,14 +28,14 @@ export const NavbarContainer = styled.div`
     max-width: 1100px;
 `
 export const NavLogo = styled(LinkR)`
+    font-family: 'Black Ops One', cursive;
     color: #fff;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    margin-left: 24px;
-    font-weight: bold;
+    /*margin-left: 24px;*/
     text-decoration: none;
 `
 export const MobileIcon = styled.div`
@@ -74,6 +74,7 @@ export const NavLinks = styled(LinkS)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+    font-weight: bold;
 
     &:active {
         border-bottom: 3px solid #01bf71;
@@ -99,6 +100,7 @@ export const NavBtnLink = styled(LinkR)`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+    font-weight: bold;
 
     &:hover {
         transition: all 0.2s ease-in-out;
