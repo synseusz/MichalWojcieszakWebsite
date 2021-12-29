@@ -9,20 +9,16 @@ import {
   HeroP,
   HeroBtnWrapper,
   ArrowForward,
-  ArrowRight
+  ArrowRight,
 } from "./HeroElements";
-import {Button} from "../ButtonElement";
-
+import { Button } from "../ButtonElement";
 
 const Hero = () => {
-    const [hover, setHover] = useState(false)
+  const [hover, setHover] = useState(false);
 
-    const onHover = () => {
-        setHover(!hover)
-    }
-
-
-
+  const onHover = () => {
+    setHover(!hover);
+  };
 
   return (
     <HeroContainer id="home">
@@ -31,11 +27,19 @@ const Hero = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>Treningi personalne, dieta, motywacja.</HeroH1>
-        <HeroP>
-            Wspólnie zbudujemy Twoją wymarzoną sylwetkę!
-        </HeroP>
+        <HeroP>Wspólnie zbudujemy Twoją wymarzoną sylwetkę!</HeroP>
         <HeroBtnWrapper>
-          <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover}>
+          <Button
+            to="about"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+            dark="true"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
             Zaczynamy {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>

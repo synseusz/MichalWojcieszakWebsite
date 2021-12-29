@@ -3,9 +3,9 @@ import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
 export const Nav = styled.nav`
-    background: #000;
+    background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
     height: 80px;
-    /* margin-top: -80px; */
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,8 +27,8 @@ export const NavbarContainer = styled.div`
     padding: 0 24px;
     max-width: 1100px;
 `
-export const NavLogo = styled(LinkR)`
-    font-family: 'Black Ops One', cursive;
+export const NavLogo = styled(LinkS)`
+    /*font-family: 'Black Ops One', cursive;*/
     color: #fff;
     justify-self: flex-start;
     cursor: pointer;
@@ -74,7 +74,7 @@ export const NavLinks = styled(LinkS)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-    font-weight: bold;
+    
 
     &:active {
         border-bottom: 3px solid #01bf71;
@@ -100,7 +100,7 @@ export const NavBtnLink = styled(LinkR)`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-    font-weight: bold;
+    
 
     &:hover {
         transition: all 0.2s ease-in-out;
