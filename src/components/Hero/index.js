@@ -23,19 +23,9 @@ const Hero = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        <VideoBg
-          autoPlay
-          loop
-          muted
-          src={Video}
-          type="video/mp4"
-          playInBackground={true}
-          playWhenInactive={true}
-          ignoreSilentSwitch="ignore"
-          playsinline
-          disablepictureinpicture
-          preload="auto"
-        />
+        <VideoBg id="bgvideo" autoPlay loop muted playsInline>
+          <source src={Video} type="video/mp4" />
+        </VideoBg>
       </HeroBg>
       <HeroContent>
         <HeroH1>Treningi personalne, dieta, motywacja.</HeroH1>
