@@ -25,6 +25,7 @@ const InfoSection = ({
   darkText,
   description,
   buttonLabel,
+  buttonRedirectId,
   img,
   alt,
   primary,
@@ -42,7 +43,7 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button to="home"
+                  <Button to={buttonRedirectId}
                   smooth={true}
                   duration={500}
                   spy={true}

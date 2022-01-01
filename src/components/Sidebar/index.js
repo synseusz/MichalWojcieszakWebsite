@@ -18,18 +18,52 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>
+          <SidebarLink
+            to="about"
+            onClick={toggle}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
             O mnie
           </SidebarLink>
-          <SidebarLink to="collab" onClick={toggle}>
-            Współpraca
-          </SidebarLink>
-          <SidebarLink to="training-plans" onClick={toggle}>
+          <SidebarLink
+            to="training-plans"
+            onClick={toggle}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
             Plany treningowe
+          </SidebarLink>
+          <SidebarLink
+            to="collab"
+            onClick={toggle}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            Współpraca
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="contact" onClick={toggle}>Kontakt</SidebarRoute>
+          <SidebarRoute
+            to="contact"
+            onClick={toggle}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            Kontakt
+          </SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
