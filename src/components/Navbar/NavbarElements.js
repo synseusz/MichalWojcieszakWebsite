@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
+import {FaFacebook, FaInstagram} from 'react-icons/fa'
 
 export const Nav = styled.nav`
     background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
@@ -79,8 +79,12 @@ export const NavLinks = styled(LinkS)`
     &:active {
         border-bottom: 3px solid #01bf71;
     }
+    &:hover {
+        color: #01bf71;
+        transition: 0.2s ease-in-out;
+    }
 `
-export const NavBtn = styled.nav`
+export const SocialsWrapper = styled.nav`
     display: flex;
     align-items: center;
 
@@ -88,23 +92,26 @@ export const NavBtn = styled.nav`
         display: none;
     }
 `
-export const NavBtnLink = styled(LinkR)`
-    border-radius: 50px;
-    background: #01bf71;
-    white-space: nowrap;
-    padding: 10px 22px;
-    color: #010606;
-    font-size: 16px;
-    outline: none;
-    border: none;
+export const FBIcon = styled(FaFacebook)`
+    color: #fff;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-    
+    margin-right: 15px;
+    height: 20px;
+    width: 20px;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606;
+        color: #01bf71;
+        transition: 0.2s ease-in-out;
+    }
+`
+export const IGIcon = styled(FaInstagram)`
+    color: #fff;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+
+    &:hover {
+        color: #01bf71;
+        transition: 0.2s ease-in-out;
     }
 `

@@ -6,8 +6,9 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
-  SideBtnWrap,
-  SidebarRoute,
+  SocialsWrap,
+  FBIcon,
+  IGIcon,
 } from "./SidebarElements";
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -51,9 +52,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           >
             Współpraca
           </SidebarLink>
-        </SidebarMenu>
-        <SideBtnWrap>
-          <SidebarRoute
+          <SidebarLink
             to="contact"
             onClick={toggle}
             smooth={true}
@@ -63,8 +62,20 @@ const Sidebar = ({ isOpen, toggle }) => {
             offset={-80}
           >
             Kontakt
-          </SidebarRoute>
-        </SideBtnWrap>
+          </SidebarLink>
+        </SidebarMenu>
+        <SocialsWrap>
+          <a
+            href="https://www.facebook.com/trener.michal.wojcieszak"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FBIcon />
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+            <IGIcon />
+          </a>
+        </SocialsWrap>
       </SidebarWrapper>
     </SidebarContainer>
   );

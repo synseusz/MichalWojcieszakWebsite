@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import {Link as LinkS} from 'react-scroll'
-import {Link as LinkR} from 'react-router-dom'
-import {FaTimes} from 'react-icons/fa'
+import {FaTimes, FaFacebook, FaInstagram} from 'react-icons/fa'
 
 export const SidebarContainer = styled.aside`
     position: fixed;
@@ -62,26 +61,28 @@ export const SidebarLink = styled(LinkS)`
         transition: 0.2s ease-in-out;
     }
 `
-export const SideBtnWrap = styled.div`
+export const SocialsWrap = styled.div`
     display: flex;
     justify-content: center;
 `
-export const SidebarRoute = styled(LinkR)`
-    border-radius: 50px;
-    background: #01bf71;
-    white-space: nowrap;
-    padding: 16px 64px;
-    color: #010606;
-    font-size: 16px;
-    outline: none;
-    border: none;
+export const FBIcon = styled(FaFacebook)`
+    color: #fff;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
+    margin-right: 15px;
+    height: 40px;
+    width: 40px;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606;
+        color: #01bf71;
+    }
+`
+export const IGIcon = styled(FaInstagram)`
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+
+    &:hover {
+        color: #01bf71;
     }
 `

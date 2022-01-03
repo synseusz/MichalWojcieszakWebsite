@@ -8,8 +8,9 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavBtn,
-  NavBtnLink,
+  SocialsWrapper,
+  FBIcon,
+  IGIcon,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -81,10 +82,35 @@ const Navbar = ({ toggle }) => {
                 Współpraca
               </NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinks
+                to="contact"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Kontakt
+              </NavLinks>
+            </NavItem>
           </NavMenu>
-          <NavBtn>
-            <NavBtnLink to="contact">Kontakt</NavBtnLink>
-          </NavBtn>
+          <SocialsWrapper>
+            <a
+              href="https://www.facebook.com/trener.michal.wojcieszak"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FBIcon />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IGIcon />
+            </a>
+          </SocialsWrapper>
         </NavbarContainer>
       </Nav>
     </>

@@ -30,7 +30,7 @@ export const CollabData = {
         'Jestem osobą, która ponad wszystko ceni sobie równowagę w życiu. Rozwój umysłu jest tak samo ważny, jak utrzymywanie ciała w doskonałej kondycji. Od 11 lat jestem związany hobbystycznie i zawodowo ze sportem. Siłownia to mój żywioł i pasja. Dzień bez treningu uważam za dzień stracony i tego samego uczę moich Podopiecznych. W pracy z nimi szczególny nacisk kładę na poprawienie kondycji i sylwetki dzięki odpowiednim ćwiczeniom i indywidualnie dobranej diecie.',
     buttonLabel: 'Kontakt',
     buttonRedirectId: 'contact',
-    imgStart: true,
+    imgStart: false,
     img: svg1,
     alt: 'Collaboration Icon',
     dark: true,
