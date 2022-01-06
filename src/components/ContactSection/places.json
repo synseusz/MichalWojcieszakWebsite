@@ -5,7 +5,10 @@
             "properties": {
                 "GYM_ID": 1,
                 "NAME": "Rio Top Gym - Siłownia Wrocław Tarasy Grabiszyńskie",
-                "ADDRESS": "Grabiszyńska 238/240, 53-235 Wrocław"
+                "ADDRESS": "Grabiszyńska 238/240",
+                "POSTCODE": "53-235 Wrocław",
+                "COUNTRY": "Poland",
+                "LINK": "https://www.google.com/maps/place/Rio+Top+Gym+-+Si%C5%82ownia+Wroc%C5%82aw+Tarasy+Grabiszy%C5%84skie/@51.0941195,16.9796247,17z/data=!4m5!3m4!1s0x470fc18bb3271811:0xc0b6c22107b3c8ba!8m2!3d51.0941162!4d16.9818134"
             },
             "location": {
                 "lat": 51.09423746647113,
@@ -17,7 +20,10 @@
             "properties": {
                 "GYM_ID": 2,
                 "NAME": "Holmes Place OVO | Siłownia, Klub fitness",
-                "ADDRESS": "Podwale 83, 50-414 Wrocław"
+                "ADDRESS": "Podwale 83",
+                "POSTCODE": "50-414 Wrocław",
+                "COUNTRY": "Poland",
+                "LINK": "https://www.google.com/maps/place/Holmes+Place+OVO+%7C+Si%C5%82ownia,+Klub+fitness/@51.1079332,17.0407554,17z/data=!3m2!4b1!5s0x470fc278317cf7af:0x92e73b2217eebc38!4m5!3m4!1s0x0:0x392c859621c93325!8m2!3d51.1079301!4d17.0429445"
             },
             "location": {
                 "lat": 51.1080221291498,

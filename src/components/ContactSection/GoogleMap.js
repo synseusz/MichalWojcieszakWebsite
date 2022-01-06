@@ -7,6 +7,13 @@ import {
   InfoWindow,
 } from "react-google-maps";
 import gymData from "../ContactSection/places.json";
+import {
+  InfoWindowTextWrapper,
+  MapContainer,
+  Name,
+  Line,
+  GoogleMapsLink,
+} from "./ContactSectionElements";
 
 const GoogleMapElement = () => {
   const Map = () => {
@@ -24,7 +31,7 @@ const GoogleMapElement = () => {
             onClick={() => {
               setSelectedGym(gym);
             }}
-          ></Marker>
+          />
         ))}
         {selectedGym && (
           <InfoWindow
@@ -36,7 +43,19 @@ const GoogleMapElement = () => {
               setSelectedGym(null);
             }}
           >
-            <div>Gym Details</div>
+            <InfoWindowTextWrapper>
+              <Name>{selectedGym.properties.NAME}</Name>
+              <Line>{selectedGym.properties.ADDRESS}</Line>
+              <Line>{selectedGym.properties.POSTCODE}</Line>
+              <Line>{selectedGym.properties.COUNTRY}</Line>
+              <GoogleMapsLink
+                href={selectedGym.properties.LINK}
+                target="_blank"
+                rel="noreferrer"
+              >
+                View on Google Maps
+              </GoogleMapsLink>
+            </InfoWindowTextWrapper>
           </InfoWindow>
         )}
       </GoogleMap>
@@ -46,14 +65,14 @@ const GoogleMapElement = () => {
   const WrappedMap = withScriptjs(withGoogleMap(Map));
 
   return (
-    <div style={{ width: "500px", height: "500px" }}>
+    <MapContainer>
       <WrappedMap
         googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_API_KEY}&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_locatorplus_v4_cA`}
         loadingElement={<div style={{ height: "100%" }} />}
         containerElement={<div style={{ height: "100%" }} />}
         mapElement={<div style={{ height: "100%" }} />}
       />
-    </div>
+    </MapContainer>
   );
 };
 

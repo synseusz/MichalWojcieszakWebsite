@@ -8,6 +8,12 @@ import {
   TextWrapper,
   TopLine,
   Heading,
+  MailWrapper,
+  MailIcon,
+  Mail,
+  PhoneWrapper,
+  PhoneIcon,
+  Phone
 } from "../ContactSection/ContactSectionElements";
 import GoogleMapElement from "./GoogleMap";
 
@@ -19,7 +25,7 @@ const ContactSection = ({
   lightText,
   headline,
   topLine2,
-  headline2
+  headline2,
 }) => {
   return (
     <>
@@ -34,7 +40,16 @@ const ContactSection = ({
               <GoogleMapElement />
             </Column1>
             <Column2>
-              
+              <TextWrapper>
+                <MailWrapper>
+                  <MailIcon />
+                  <Mail>michal.wojcieszak@gmail.com</Mail>
+                </MailWrapper>
+                <PhoneWrapper>
+                    <PhoneIcon />
+                    <Phone>12312244543</Phone>
+                </PhoneWrapper>
+              </TextWrapper>
             </Column2>
           </Row>
         </Wrapper>
