@@ -1,7 +1,8 @@
 import React, {useState} from "react";
+import ContactSection from "../components/ContactSection";
 import Hero from "../components/Hero";
 import InfoSection from "../components/InfoSection";
-import { AboutData, CollabData } from "../components/InfoSection/Data";
+import { AboutData, ContactData } from "../components/InfoSection/Data";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import TrainingPlans from "../components/TrainingPlansSection";
@@ -22,7 +23,7 @@ const Home = () => {
       <Hero />
       <InfoSection {...AboutData} />
       <TrainingPlans />
-      <InfoSection {...CollabData} />
+      <ContactSection {...ContactData} />
     </>
   );
 };

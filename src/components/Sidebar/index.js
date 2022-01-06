@@ -42,17 +42,6 @@ const Sidebar = ({ isOpen, toggle }) => {
             Plany treningowe
           </SidebarLink>
           <SidebarLink
-            to="collab"
-            onClick={toggle}
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-          >
-            Współpraca
-          </SidebarLink>
-          <SidebarLink
             to="contact"
             onClick={toggle}
             smooth={true}
