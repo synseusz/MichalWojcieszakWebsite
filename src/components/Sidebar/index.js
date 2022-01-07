@@ -26,7 +26,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             duration={500}
             spy={true}
             exact="true"
-            offset={-80}
+            offset={-10}
           >
             O mnie
           </SidebarLink>
@@ -37,7 +37,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             duration={500}
             spy={true}
             exact="true"
-            offset={-80}
+            offset={-10}
           >
             Plany treningowe
           </SidebarLink>
@@ -48,7 +48,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             duration={500}
             spy={true}
             exact="true"
-            offset={-80}
+            offset={-10}
           >
             Kontakt
           </SidebarLink>

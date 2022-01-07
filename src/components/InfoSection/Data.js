@@ -42,7 +42,7 @@ export const ContactData = {
     topLine: 'Gotowy(a) na metamorfozę?',
     headline: 'Tu mnie znajdziesz',
     topLine2: 'Ponaddto',
-    headline2: 'Inne formy kontaktu',
+    headline2: 'Kontakt',
     imgStart: false,
     img: require('../../images/image1.jpg'),
     alt: 'Michał Wojcieszak',

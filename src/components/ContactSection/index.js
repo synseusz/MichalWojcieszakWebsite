@@ -8,12 +8,17 @@ import {
   TextWrapper,
   TopLine,
   Heading,
+  Heading2,
   MailWrapper,
   MailIcon,
   Mail,
   PhoneWrapper,
   PhoneIcon,
-  Phone
+  Phone,
+  SocialsWrapper,
+  FBIcon,
+  IGIcon,
+  ContactInfoWrapper,
 } from "../ContactSection/ContactSectionElements";
 import GoogleMapElement from "./GoogleMap";
 
@@ -40,16 +45,33 @@ const ContactSection = ({
               <GoogleMapElement />
             </Column1>
             <Column2>
-              <TextWrapper>
+              <ContactInfoWrapper>
+                <Heading2 lightText={lightText}>{headline2}</Heading2>
                 <MailWrapper>
                   <MailIcon />
                   <Mail>michal.wojcieszak@gmail.com</Mail>
                 </MailWrapper>
                 <PhoneWrapper>
-                    <PhoneIcon />
-                    <Phone>12312244543</Phone>
+                  <PhoneIcon />
+                  <Phone>+48 604 752 608</Phone>
                 </PhoneWrapper>
-              </TextWrapper>
+                <SocialsWrapper>
+                  <a
+                    href="https://www.facebook.com/trener.michal.wojcieszak"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FBIcon />
+                  </a>
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <IGIcon />
+                  </a>
+                </SocialsWrapper>
+              </ContactInfoWrapper>
             </Column2>
           </Row>
         </Wrapper>

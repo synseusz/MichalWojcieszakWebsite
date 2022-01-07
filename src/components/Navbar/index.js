@@ -53,7 +53,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
+                offset={-10}
               >
                 O mnie
               </NavLinks>
@@ -65,7 +65,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
+                offset={-10}
               >
                 Plany Treningowe
               </NavLinks>
@@ -77,7 +77,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
+                offset={-10}
               >
                 Kontakt
               </NavLinks>
