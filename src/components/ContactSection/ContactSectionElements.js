@@ -6,9 +6,9 @@ export const Container = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
   padding: 100px 0;
+  height:100vh;
 
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
     height: 100%;
   }
 `;
@@ -178,7 +178,7 @@ export const IGIcon = styled(FaInstagram)`
 
 /* GOOGLE MAP ELEMENT */
 export const MapContainer = styled.div`
-  height: 500px;
+  height: 400px;
   width: 500px;
   border: 3px solid #01bf71;
   margin-left: auto;

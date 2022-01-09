@@ -21,8 +21,8 @@ const GoogleMapElement = () => {
 
     return (
       <GoogleMap
-        defaultZoom={12}
-        defaultCenter={{ lat: 51.10115073500656, lng: 17.0080331831903 }}
+        defaultZoom={11.7}
+        defaultCenter={{ lat: 51.10453489693723, lng: 17.021943052643845 }}
       >
         {gymData.places.map((gym) => (
           <Marker
