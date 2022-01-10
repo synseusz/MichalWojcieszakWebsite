@@ -92,15 +92,21 @@ export const Img = styled.img`
 export const IFrameContainer = styled.div`
     color: #fff;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    border: 1px solid red;
     text-align: center;
     align-items: center;
     margin-top: 50px;
 `
-export const IFrame = styled.iframe`
-    color: red;
-    background: #fff;
-    border: 2px solid #2687F4;
-    width: 70vw;
+export const CarouselIMGcontainer = styled.div`
+    display: flex;
+    justify-content: center;
+    justify-self:center;
+    align-self:center;
+    border: 1px solid red;
+    text-align: center;
+    align-items: center;
+`
+export const CarouselIMG = styled.img`
+    
 `

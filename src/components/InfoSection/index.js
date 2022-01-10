@@ -19,6 +19,7 @@ import {
   IFrameContainer,
 } from "./InfoElements";
 import { useInView } from "react-intersection-observer";
+import ResponsiveCarousel from "./Carousel"
 
 const InfoSection = ({
   lightBg,
@@ -149,20 +150,7 @@ const InfoSection = ({
             </Column2>
           </InfoRow>
           <IFrameContainer>
-            <IFrame
-              src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftrener.michal.wojcieszak%2Fphotos%2Fa.906223889465662%2F927044647383586%2F%3Ftype%3D3&show_text=true&width=500&colorscheme=dark"
-              width="500"
-              height="583"
-              style={{ border:"none", overflow: "hidden" }}
-              scrolling="no"
-              frameborder="0"
-              allowfullscreen="true"
-              colorscheme="dark"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              data-hide-cover="false"
-            >
-            </IFrame>
-            {/*<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftrener.michal.wojcieszak%2Fphotos%2Fa.906223889465662%2F927044647383586%2F%3Ftype%3D3&show_text=true&width=500" width="500" height="583" style={{border:"none",overflow:"hidden", color:"white"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" />*/}
+            <ResponsiveCarousel />
           </IFrameContainer>
         </InfoWrapper>
       </InfoContainer>
