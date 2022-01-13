@@ -47,7 +47,26 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
+  text-align: center;
+
 `;
+export const Text = styled.p`
+    font-size: 15px;
+    line-height: 24px;
+    color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
+`
+export const Link = styled.p`
+    font-size: 15px;
+    line-height: 24px;
+    color: #5491f5;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+`
 export const TopLine = styled.p`
   color: #01bf71;
   font-size: 16px;
@@ -183,6 +202,7 @@ export const MapContainer = styled.div`
   border: 3px solid #01bf71;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 768px) {
     height: 400px;

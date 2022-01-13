@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 1000px;
+    height: 100vh;
+    padding: 100px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,23 +10,27 @@ export const Container = styled.div`
     background: #f9f9f9;
 
     @media screen and (max-width: 768px) {
-        height: 1300px;
+        height: 100%;
     }
     @media screen and (max-width: 480px) {
-        height: 1500px;
+        height: 100%;
     }
 `
 export const Wrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
+    justify-content: center;
     grid-gap: 16px;
     padding: 0 50px;
 
+    @media screen and (max-width: 1300px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     @media screen and (max-width: 1000px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
@@ -45,7 +50,7 @@ export const PlanCard = styled.div`
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        transform: scale(1.02);
+        transform: scale(1.05);
         transition: all 0.2s ease-in-out;
         cursor: pointer
     }
@@ -67,6 +72,7 @@ export const H1 = styled.h1`
 export const H2 = styled.h2`
     font-size: 1rem;
     margin-bottom: 10px;
+    text-align: center;
 `
 export const P = styled.p`
     font-size: 1rem;
@@ -76,4 +82,15 @@ export const Price = styled.h2`
     font-size: 1.3rem;
     margin-top: 15px;
     color: #01BF71
+`
+export const Wrapper2 = styled.div`
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    grid-gap: 16px;
+
+
 `

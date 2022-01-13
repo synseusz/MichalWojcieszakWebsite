@@ -19,6 +19,8 @@ import {
   FBIcon,
   IGIcon,
   ContactInfoWrapper,
+  Text,
+  Link,
 } from "../ContactSection/ContactSectionElements";
 import GoogleMapElement from "./GoogleMap";
 
@@ -43,6 +45,28 @@ const ContactSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
               </TextWrapper>
               <GoogleMapElement />
+              <TextWrapper>
+                <TopLine>Rio Top Gym</TopLine>
+                <Text>Grabiszyńska 238/240, 53-235 Wrocław</Text>
+                <a
+                  href="https://riotopgym.pl/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ textDecoration: 'none'}}
+                >
+                  <Link>LINK DO STRONY</Link>
+                </a>
+                <TopLine>Holmes Place OVO</TopLine>
+                <Text>Podwale 83, 50-414 Wrocław</Text>
+                <a
+                  href="https://www.holmesplace.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ textDecoration: 'none'}}
+                >
+                  <Link>LINK DO STRONY</Link>
+                </a>
+              </TextWrapper>
             </Column1>
             <Column2>
               <ContactInfoWrapper>
