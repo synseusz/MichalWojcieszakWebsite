@@ -9,6 +9,12 @@ export const Container = styled.div`
     align-items: center;
     background: #f9f9f9;
 
+    @media screen and (max-width: 1300px) {
+        height: 100%;
+    }
+    @media screen and (max-width: 1000px) {
+        height: 100%;
+    }
     @media screen and (max-width: 768px) {
         height: 100%;
     }
@@ -81,6 +87,10 @@ export const P = styled.p`
 export const Price = styled.h2`
     font-size: 1.3rem;
     margin-top: 15px;
+    color: #01BF71
+`
+export const Price2 = styled.h2`
+    font-size: 1.4rem;
     color: #01BF71
 `
 export const Wrapper2 = styled.div`

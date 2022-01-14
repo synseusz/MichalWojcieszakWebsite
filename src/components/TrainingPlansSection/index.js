@@ -8,6 +8,7 @@ import {
   H2,
   P,
   Price,
+  Price2,
   Wrapper2,
 } from "./TrainingPlansSectionElements";
 import WhitePlanIcon from "../../images/plan_white.svg";
@@ -19,35 +20,35 @@ import DiamondPlanIcon from "../../images/plan_diamond.svg";
 const TrainingPlans = () => {
   return (
     <Container id="training-plans">
-      <H1>Plany Treningowe</H1>
+      <H1>Pakiety Treningowe</H1>
       <Wrapper>
         <PlanCard>
           <Icon src={WhitePlanIcon} />
-          <H2>Plan White</H2>
+          <H2>Pakiet White</H2>
           <P>1 trening</P>
           <Price>150 zł</Price>
         </PlanCard>
         <PlanCard>
           <Icon src={BronzePlanIcon} />
-          <H2>Plan Bronze</H2>
+          <H2>Pakiet Bronze</H2>
           <P>6 treningów</P>
           <Price>750 zł</Price>
         </PlanCard>
         <PlanCard>
           <Icon src={SilverPlanIcon} />
-          <H2>Plan Silver</H2>
+          <H2>Pakiet Silver</H2>
           <P>12 treningów</P>
           <Price>1400 zł</Price>
         </PlanCard>
         <PlanCard>
           <Icon src={GoldPlanIcon} />
-          <H2>Plan Gold</H2>
+          <H2>Pakiet Gold</H2>
           <P>25 treningów</P>
           <Price>2750 zł</Price>
         </PlanCard>
         <PlanCard>
           <Icon src={DiamondPlanIcon} />
-          <H2>Plan Diamond</H2>
+          <H2>Pakiet Diamond</H2>
           <P>50 treningów</P>
           <Price>5000 zł</Price>
         </PlanCard>
@@ -58,18 +59,18 @@ const TrainingPlans = () => {
       <H1>Pozostałe Opcje</H1>
       <PlanCard>
         <Wrapper2>
-          <H2>Plan Treningowy</H2>
-          <P>X treningów</P>
-          <Price>150 zł</Price>
+          <H2>Plan Treningowy (tydzień)</H2>
+          <P>W pełni spersonalizowany tygodniowy plan</P>
+          <Price2>150 zł</Price2>
           <H2>Plan Treningowy (miesiąc)</H2>
           <P>
             1 wspólny trening w tygodniu oraz układanie planów na pozostałe
             treningi
           </P>
-          <Price>600 zł</Price>
+          <Price2>600 zł</Price2>
           <H2>Porady Żywieniowe</H2>
           <P>Konsultacja + korekta</P>
-          <Price>150 zł</Price>
+          <Price2>150 zł</Price2>
         </Wrapper2>
       </PlanCard>
     </Container>

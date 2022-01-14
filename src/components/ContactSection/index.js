@@ -21,6 +21,7 @@ import {
   ContactInfoWrapper,
   Text,
   Link,
+  Wrapper2
 } from "../ContactSection/ContactSectionElements";
 import GoogleMapElement from "./GoogleMap";
 
@@ -52,7 +53,7 @@ const ContactSection = ({
                   href="https://riotopgym.pl/"
                   target="_blank"
                   rel="noreferrer"
-                  style={{ textDecoration: 'none'}}
+                  style={{ textDecoration: "none" }}
                 >
                   <Link>LINK DO STRONY</Link>
                 </a>
@@ -62,7 +63,7 @@ const ContactSection = ({
                   href="https://www.holmesplace.com/"
                   target="_blank"
                   rel="noreferrer"
-                  style={{ textDecoration: 'none'}}
+                  style={{ textDecoration: "none" }}
                 >
                   <Link>LINK DO STRONY</Link>
                 </a>
@@ -71,14 +72,16 @@ const ContactSection = ({
             <Column2>
               <ContactInfoWrapper>
                 <Heading2 lightText={lightText}>{headline2}</Heading2>
-                <MailWrapper>
-                  <MailIcon />
-                  <Mail>michal.wojcieszak@gmail.com</Mail>
-                </MailWrapper>
-                <PhoneWrapper>
-                  <PhoneIcon />
-                  <Phone>+48 604 752 608</Phone>
-                </PhoneWrapper>
+                <Wrapper2>
+                  <MailWrapper>
+                    <MailIcon />
+                    <Mail>michal.wojcieszak@gmail.com</Mail>
+                  </MailWrapper>
+                  <PhoneWrapper>
+                    <PhoneIcon />
+                    <Phone>+48 604 752 608</Phone>
+                  </PhoneWrapper>
+                </Wrapper2>
                 <SocialsWrapper>
                   <a
                     href="https://www.facebook.com/trener.michal.wojcieszak"

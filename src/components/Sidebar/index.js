@@ -39,7 +39,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             exact="true"
             offset={-10}
           >
-            Plany treningowe
+            Pakiety treningowe
           </SidebarLink>
           <SidebarLink
             to="contact"

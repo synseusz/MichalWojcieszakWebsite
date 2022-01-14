@@ -6,9 +6,18 @@ export const Container = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
   padding: 100px 0;
-  height:100vh;
+  height: 100vh;
 
+  @media screen and (max-width: 1300px) {
+    height: 100%;
+  }
+  @media screen and (max-width: 1000px) {
+    height: 100%;
+  }
   @media screen and (max-width: 768px) {
+    height: 100%;
+  }
+  @media screen and (max-width: 480px) {
     height: 100%;
   }
 `;
@@ -48,25 +57,24 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   text-align: center;
-
 `;
 export const Text = styled.p`
-    font-size: 15px;
-    line-height: 24px;
-    color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
-`
+  font-size: 15px;
+  line-height: 24px;
+  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+`;
 export const Link = styled.p`
-    font-size: 15px;
-    line-height: 24px;
-    color: #5491f5;
-    margin-bottom: 20px;
-    cursor: pointer;
-    text-decoration: none;
+  font-size: 15px;
+  line-height: 24px;
+  color: #5491f5;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-decoration: none;
 
-    &:hover {
-      text-decoration: underline;
-    }
-`
+  &:hover {
+    text-decoration: underline;
+  }
+`;
 export const TopLine = styled.p`
   color: #01bf71;
   font-size: 16px;
@@ -75,7 +83,7 @@ export const TopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
-  text-align:center;
+  text-align: center;
 `;
 export const Heading = styled.h1`
   margin-bottom: 24px;
@@ -117,10 +125,32 @@ export const ContactInfoWrapper = styled.div`
     margin-top: 50px;
   }
 `;
+export const Wrapper2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media screen and (max-width: 1300px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media screen and (max-width: 1000px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media screen and (max-width: 480px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+`;
 export const MailWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 `;
 export const MailIcon = styled(SiGmail)`
   height: 40px;
@@ -133,12 +163,15 @@ export const MailIcon = styled(SiGmail)`
   }
 `;
 export const Mail = styled.p`
-  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 100%;
+  align-self: center;
 `;
 export const PhoneWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   padding-top: 20px;
 `;
 export const PhoneIcon = styled(FaPhoneAlt)`
@@ -152,7 +185,11 @@ export const PhoneIcon = styled(FaPhoneAlt)`
   }
 `;
 export const Phone = styled.p`
-  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 100%;
+  align-self: center;
 `;
 export const SocialsWrapper = styled.div`
   display: flex;

@@ -67,7 +67,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Plany Treningowe
+                Pakiety Treningowe
               </NavLinks>
             </NavItem>
             <NavItem>
