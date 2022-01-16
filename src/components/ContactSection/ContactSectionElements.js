@@ -164,6 +164,7 @@ export const Mail = styled.p`
   display: flex;
   flex-direction: row;
   justify-content: right;
+  text-align: right;
   width: 100%;
   align-self: center;
 `;
@@ -190,6 +191,8 @@ export const Phone = styled.p`
   justify-content: right;
   width: 100%;
   align-self: center;
+  text-align: right;
+
 `;
 export const SocialsWrapper = styled.div`
   display: flex;
