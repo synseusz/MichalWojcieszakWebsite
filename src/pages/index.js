@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import InfoSection from "../components/InfoSection";
 import { AboutData, ContactData } from "../components/InfoSection/Data";
@@ -24,6 +25,7 @@ const Home = () => {
       <InfoSection {...AboutData} />
       <TrainingPlans />
       <ContactSection {...ContactData} />
+      <Footer />
     </>
   );
 };

@@ -1,3 +1,4 @@
+import { GiTrophy } from "react-icons/gi";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -61,7 +62,7 @@ export const PlanCard = styled.div`
         cursor: pointer
     }
 `
-export const Icon = styled.img`
+export const Icon = styled(GiTrophy)`
     height: 160px;
     width: 160px;
     margin-bottom: 10px;

@@ -1,18 +1,12 @@
 import React from 'react'
+import { FooterContainer, FooterWrap } from './FooterElements'
 
 const Footer = () => {
     return (
         <FooterContainer>
             <FooterWrap>
-                <FooterLinksContainer>
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>
-                                
-                            </FooterLinkTitle>
-                        </FooterLinkItems>
-                    </FooterLinksWrapper>
-                </FooterLinksContainer>
+                <p>&copy; Copyright by Michał Wojcieszak</p>
+                <p>Designed by Piotr Orłowski</p>
             </FooterWrap>
         </FooterContainer>
     )

@@ -128,24 +128,20 @@ export const ContactInfoWrapper = styled.div`
 export const Wrapper2 = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 400px;
+  align-self: center;
 
   @media screen and (max-width: 1300px) {
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 380px;
   }
   @media screen and (max-width: 1000px) {
-    padding-left: 0px;
-    padding-right: 0px;
+    width:300px;
   }
   @media screen and (max-width: 768px) {
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 400px;
   }
   @media screen and (max-width: 480px) {
-    padding-left: 0px;
-    padding-right: 0px;
+    width: 300px;
   }
 `;
 export const MailWrapper = styled.div`
@@ -241,7 +237,7 @@ export const MapContainer = styled.div`
   margin-right: auto;
   margin-bottom: 20px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     height: 400px;
     width: 400px;
   }

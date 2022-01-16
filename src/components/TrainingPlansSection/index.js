@@ -11,11 +11,11 @@ import {
   Price2,
   Wrapper2,
 } from "./TrainingPlansSectionElements";
-import WhitePlanIcon from "../../images/plan_white.svg";
+/*import WhitePlanIcon from "../../images/plan_white.svg";
 import BronzePlanIcon from "../../images/plan_bronze.svg";
 import SilverPlanIcon from "../../images/plan_silver.svg";
 import GoldPlanIcon from "../../images/plan_gold.svg";
-import DiamondPlanIcon from "../../images/plan_diamond.svg";
+import DiamondPlanIcon from "../../images/plan_diamond.svg";*/
 
 const TrainingPlans = () => {
   return (
@@ -23,31 +23,31 @@ const TrainingPlans = () => {
       <H1>Pakiety Treningowe</H1>
       <Wrapper>
         <PlanCard>
-          <Icon src={WhitePlanIcon} />
-          <H2>Pakiet White</H2>
+          <Icon style={{color: 'black'}}/>
+          <H2>Pakiet Black</H2>
           <P>1 trening</P>
           <Price>150 zł</Price>
         </PlanCard>
         <PlanCard>
-          <Icon src={BronzePlanIcon} />
+          <Icon style={{color: 'brown'}} />
           <H2>Pakiet Bronze</H2>
           <P>6 treningów</P>
           <Price>750 zł</Price>
         </PlanCard>
         <PlanCard>
-          <Icon src={SilverPlanIcon} />
+          <Icon style={{color: 'silver'}} />
           <H2>Pakiet Silver</H2>
           <P>12 treningów</P>
           <Price>1400 zł</Price>
         </PlanCard>
         <PlanCard>
-          <Icon src={GoldPlanIcon} />
+          <Icon style={{color: 'gold'}} />
           <H2>Pakiet Gold</H2>
           <P>25 treningów</P>
           <Price>2750 zł</Price>
         </PlanCard>
         <PlanCard>
-          <Icon src={DiamondPlanIcon} />
+          <Icon style={{color: '#b9f2ff'}} />
           <H2>Pakiet Diamond</H2>
           <P>50 treningów</P>
           <Price>5000 zł</Price>
