@@ -130,7 +130,6 @@ export const Wrapper2 = styled.div`
   flex-direction: column;
   width: 400px;
   align-self: center;
-  justify-content: space-between;
 
   @media screen and (max-width: 1300px) {
     width: 380px;
@@ -148,6 +147,8 @@ export const Wrapper2 = styled.div`
 export const MailWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+
 `;
 export const MailIcon = styled(SiGmail)`
   height: 40px;
@@ -170,6 +171,8 @@ export const PhoneWrapper = styled.div`
   display: flex;
   flex-direction: row;
   padding-top: 20px;
+  justify-content: space-between;
+
 `;
 export const PhoneIcon = styled(FaPhoneAlt)`
   height: 40px;
