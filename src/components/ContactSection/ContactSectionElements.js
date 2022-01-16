@@ -130,6 +130,7 @@ export const Wrapper2 = styled.div`
   flex-direction: column;
   width: 400px;
   align-self: center;
+  justify-content: space-between;
 
   @media screen and (max-width: 1300px) {
     width: 380px;
