@@ -62,7 +62,7 @@ export const PlanCard = styled.div`
         cursor: pointer
     }
 `
-export const Icon = styled(GiTrophy)`
+export const Icon = styled.img`
     height: 160px;
     width: 160px;
     margin-bottom: 10px;
@@ -88,11 +88,11 @@ export const P = styled.p`
 export const Price = styled.h2`
     font-size: 1.3rem;
     margin-top: 15px;
-    color: #01BF71
+    color: #0195FE
 `
 export const Price2 = styled.h2`
     font-size: 1.4rem;
-    color: #01BF71
+    color: #0195FE
 `
 export const Wrapper2 = styled.div`
     max-width: 700px;

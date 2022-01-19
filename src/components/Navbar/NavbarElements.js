@@ -77,10 +77,10 @@ export const NavLinks = styled(LinkS)`
     
 
     /*&.active {
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid #0195FE;
     }*/
     &:hover {
-        color: #01bf71;
+        color: #0195FE;
         transition: 0.2s ease-in-out;
     }
 `
@@ -100,7 +100,7 @@ export const FBIcon = styled(FaFacebook)`
     width: 20px;
 
     &:hover {
-        color: #01bf71;
+        color: #0195FE;
         transition: 0.2s ease-in-out;
     }
 `
@@ -111,7 +111,7 @@ export const IGIcon = styled(FaInstagram)`
     width: 20px;
 
     &:hover {
-        color: #01bf71;
+        color: #0195FE;
         transition: 0.2s ease-in-out;
     }
 `

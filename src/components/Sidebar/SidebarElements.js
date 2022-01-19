@@ -57,7 +57,7 @@ export const SidebarLink = styled(LinkS)`
     cursor: pointer;
 
     &:hover {
-        color: #01bf71;
+        color: #0195FE;
         transition: 0.2s ease-in-out;
     }
 `
@@ -73,7 +73,7 @@ export const FBIcon = styled(FaFacebook)`
     width: 40px;
 
     &:hover {
-        color: #01bf71;
+        color: #0195FE;
     }
 `
 export const IGIcon = styled(FaInstagram)`
@@ -83,6 +83,6 @@ export const IGIcon = styled(FaInstagram)`
     width: 40px;
 
     &:hover {
-        color: #01bf71;
+        color: #0195FE;
     }
 `

@@ -5,7 +5,7 @@ export const AboutData = {
     lightTextDesc: true,
     topLine: 'Zanim zaczniemy...',
     headline: 'Kilka słów o mnie',
-    buttonLabel: 'Plany Treningowe',
+    buttonLabel: 'Pakiety Treningowe',
     buttonRedirectId: 'training-plans',
     imgStart: false,
     img: require('../../images/image1.jpg'),

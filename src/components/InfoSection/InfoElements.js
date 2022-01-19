@@ -47,7 +47,7 @@ export const TextWrapper = styled.div`
     padding-bottom: 60px;
 `
 export const TopLine = styled.p`
-    color: #01bf71;
+    color: #0195FE;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -86,6 +86,6 @@ export const Img = styled.img`
     margin: 0 0 10px 0;
     padding-right: 0;
     border-radius: 50px;
-    /*border: 2px outset #01bf71;*/
+    /*border: 2px outset #0195FE;*/
 
 `

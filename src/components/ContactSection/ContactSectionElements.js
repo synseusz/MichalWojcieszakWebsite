@@ -66,7 +66,7 @@ export const Text = styled.p`
 export const Link = styled.p`
   font-size: 15px;
   line-height: 24px;
-  color: #5491f5;
+  color: #C71221;
   margin-bottom: 20px;
   cursor: pointer;
   text-decoration: none;
@@ -76,7 +76,7 @@ export const Link = styled.p`
   }
 `;
 export const TopLine = styled.p`
-  color: #01bf71;
+  color: #0195FE;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -153,7 +153,7 @@ export const MailWrapper = styled.div`
 export const MailIcon = styled(SiGmail)`
   height: 40px;
   width: 40px;
-  color: #01bf71;
+  color: #fff;
 
   @media screen and (max-width: 480px) {
     height: 30px;
@@ -178,7 +178,7 @@ export const PhoneWrapper = styled.div`
 export const PhoneIcon = styled(FaPhoneAlt)`
   height: 40px;
   width: 40px;
-  color: #01bf71;
+  color: #fff;
 
   @media screen and (max-width: 480px) {
     height: 30px;
@@ -207,11 +207,11 @@ export const SocialsWrapper = styled.div`
 export const FBIcon = styled(FaFacebook)`
   height: 50px;
   width: 50px;
-  color: #01bf71;
+  color: #fff;
   cursor: pointer;
 
   &:hover {
-    color: #fff;
+    color: #0195FE;
   }
 
   @media screen and (max-width: 480px) {
@@ -222,11 +222,11 @@ export const FBIcon = styled(FaFacebook)`
 export const IGIcon = styled(FaInstagram)`
   height: 50px;
   width: 50px;
-  color: #01bf71;
+  color: #fff;
   cursor: pointer;
 
   &:hover {
-    color: #fff;
+    color: #0195FE;
   }
 
   @media screen and (max-width: 480px) {
@@ -239,7 +239,7 @@ export const IGIcon = styled(FaInstagram)`
 export const MapContainer = styled.div`
   height: 400px;
   width: 500px;
-  border: 3px solid #01bf71;
+  border: 3px solid #0195FE;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -274,6 +274,7 @@ export const GoogleMapsLink = styled.a`
   font-weight: 900;
   text-decoration: none;
   color: #5491f5;
+  cursor: pointer;
 
   &:hover {
     text-decoration: underline;
