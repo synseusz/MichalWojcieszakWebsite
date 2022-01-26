@@ -16,7 +16,7 @@ import BronzePlanIcon from "../../images/plan_bronze.svg";
 import SilverPlanIcon from "../../images/plan_silver.svg";
 import GoldPlanIcon from "../../images/plan_gold.svg";
 import DiamondPlanIcon from "../../images/plan_diamond.svg";*/
-import GrayMedal from "../../images/gray-medal.png";
+/*import GrayMedal from "../../images/gray-medal.png";*/
 import BronzeMedal from "../../images/bronze-medal.png";
 import SilverMedal from "../../images/silver-medal.png";
 import GoldMedal from "../../images/gold-medal.png";
