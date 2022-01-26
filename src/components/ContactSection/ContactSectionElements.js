@@ -44,14 +44,21 @@ export const Row = styled.div`
   }
 `;
 export const Column1 = styled.div`
-  margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
 `;
 export const Column2 = styled.div`
-  margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
+  margin-top: 100px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 40px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-top: 30px;
+  }
+  
 `;
 export const TextWrapper = styled.div`
   max-width: 540px;
@@ -66,7 +73,7 @@ export const Text = styled.p`
 export const Link = styled.p`
   font-size: 15px;
   line-height: 24px;
-  color: #C71221;
+  color: #c71221;
   margin-bottom: 20px;
   cursor: pointer;
   text-decoration: none;
@@ -76,7 +83,7 @@ export const Link = styled.p`
   }
 `;
 export const TopLine = styled.p`
-  color: #0195FE;
+  color: #0195fe;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -112,30 +119,31 @@ export const Heading2 = styled.h2`
 `;
 export const ContactInfoWrapper = styled.div`
   max-width: 540px;
-  padding-top: 0;
   display: flex;
   flex-direction: column;
   font-size: 20px;
 
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+  }
   @media screen and (max-width: 480px) {
     font-size: 15px;
     margin-top: 50px;
   }
-  @media screen and (max-width: 768px) {
-    margin-top: 50px;
-  }
+  
 `;
 export const Wrapper2 = styled.div`
   display: flex;
   flex-direction: column;
   width: 400px;
   align-self: center;
+  margin-top: 50px;
 
   @media screen and (max-width: 1300px) {
     width: 380px;
   }
   @media screen and (max-width: 1000px) {
-    width:300px;
+    width: 300px;
   }
   @media screen and (max-width: 768px) {
     width: 400px;
@@ -148,7 +156,6 @@ export const MailWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 `;
 export const MailIcon = styled(SiGmail)`
   height: 40px;
@@ -173,7 +180,6 @@ export const PhoneWrapper = styled.div`
   flex-direction: row;
   padding-top: 20px;
   justify-content: space-between;
-
 `;
 export const PhoneIcon = styled(FaPhoneAlt)`
   height: 40px;
@@ -192,7 +198,6 @@ export const Phone = styled.p`
   width: 100%;
   align-self: center;
   text-align: right;
-
 `;
 export const SocialsWrapper = styled.div`
   display: flex;
@@ -211,7 +216,7 @@ export const FBIcon = styled(FaFacebook)`
   cursor: pointer;
 
   &:hover {
-    color: #0195FE;
+    color: #0195fe;
   }
 
   @media screen and (max-width: 480px) {
@@ -226,7 +231,7 @@ export const IGIcon = styled(FaInstagram)`
   cursor: pointer;
 
   &:hover {
-    color: #0195FE;
+    color: #0195fe;
   }
 
   @media screen and (max-width: 480px) {
@@ -239,10 +244,10 @@ export const IGIcon = styled(FaInstagram)`
 export const MapContainer = styled.div`
   height: 400px;
   width: 500px;
-  border: 3px solid #0195FE;
+  border: 3px solid #0195fe;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-top: 20px;
 
   @media screen and (max-width: 1000px) {
     height: 400px;

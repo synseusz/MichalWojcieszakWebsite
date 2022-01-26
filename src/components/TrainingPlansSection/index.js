@@ -16,12 +16,12 @@ import BronzePlanIcon from "../../images/plan_bronze.svg";
 import SilverPlanIcon from "../../images/plan_silver.svg";
 import GoldPlanIcon from "../../images/plan_gold.svg";
 import DiamondPlanIcon from "../../images/plan_diamond.svg";*/
-import GrayMedal from '../../images/gray-medal.png'
-import BronzeMedal from '../../images/bronze-medal.png'
-import SilverMedal from '../../images/silver-medal.png'
-import GoldMedal from '../../images/gold-medal.png'
-import DiamondMedal from '../../images/diamond-medal.png'
-
+import GrayMedal from "../../images/gray-medal.png";
+import BronzeMedal from "../../images/bronze-medal.png";
+import SilverMedal from "../../images/silver-medal.png";
+import GoldMedal from "../../images/gold-medal.png";
+import DiamondMedal from "../../images/diamond-medal.png";
+import GIF from '../../images/X11M.gif'
 
 const TrainingPlans = () => {
   return (
@@ -29,31 +29,33 @@ const TrainingPlans = () => {
       <H1>Pakiety Treningowe</H1>
       <Wrapper>
         <PlanCard>
-          <Icon src={GrayMedal} style={{color: 'black'}}/>
+          <Icon
+            src={GIF}
+          />
           <H2>Pakiet Gray</H2>
           <P>1 trening</P>
           <Price>150 zł</Price>
         </PlanCard>
         <PlanCard>
-          <Icon src={BronzeMedal} style={{color: 'brown'}} />
+          <Icon src={BronzeMedal} style={{ color: "brown" }} />
           <H2>Pakiet Bronze</H2>
           <P>6 treningów</P>
           <Price>750 zł</Price>
         </PlanCard>
         <PlanCard>
-          <Icon src={SilverMedal} style={{color: 'silver'}} />
+          <Icon src={SilverMedal} style={{ color: "silver" }} />
           <H2>Pakiet Silver</H2>
           <P>12 treningów</P>
           <Price>1400 zł</Price>
         </PlanCard>
         <PlanCard>
-          <Icon src={GoldMedal} style={{color: 'gold'}} />
+          <Icon src={GoldMedal} style={{ color: "gold" }} />
           <H2>Pakiet Gold</H2>
           <P>25 treningów</P>
           <Price>2750 zł</Price>
         </PlanCard>
         <PlanCard>
-          <Icon src={DiamondMedal} style={{color: '#b9f2ff'}} />
+          <Icon src={DiamondMedal} style={{ color: "#b9f2ff" }} />
           <H2>Pakiet Diamond</H2>
           <P>50 treningów</P>
           <Price>5000 zł</Price>

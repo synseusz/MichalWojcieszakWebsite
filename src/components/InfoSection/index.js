@@ -93,21 +93,7 @@ const InfoSection = ({
                   i zaangażowaniem do każdego Klienta. Komunikatywność i
                   otwartość na drugiego człowieka są w moim zawodzie podstawą, a
                   rekomendacje najlepszą formą marketingu.
-                </Text>
-                <BtnWrap>
-                  <Button
-                    to={buttonRedirectId}
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    primary={primary ? 0 : 1}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                  >
-                    {buttonLabel}
-                  </Button>
-                </BtnWrap>
+                </Text>            
               </TextWrapper>
             </Column1>
             <Column2>

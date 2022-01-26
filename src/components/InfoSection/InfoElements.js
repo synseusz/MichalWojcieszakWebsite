@@ -44,7 +44,7 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
-    padding-bottom: 60px;
+    padding-bottom: 0;
 `
 export const TopLine = styled.p`
     color: #0195FE;

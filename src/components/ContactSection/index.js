@@ -46,7 +46,11 @@ const ContactSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
               </TextWrapper>
               <GoogleMapElement />
-              <TextWrapper>
+              
+            </Column1>
+            <Column2>
+              <ContactInfoWrapper>
+                <TextWrapper>
                 <TopLine>Rio Top Gym</TopLine>
                 <Text>Grabiszyńska 238/240, 53-235 Wrocław</Text>
                 <a
@@ -68,10 +72,6 @@ const ContactSection = ({
                   <Link>LINK DO STRONY</Link>
                 </a>
               </TextWrapper>
-            </Column1>
-            <Column2>
-              <ContactInfoWrapper>
-                <Heading2 lightText={lightText}>{headline2}</Heading2>
                 <Wrapper2>
                   <MailWrapper>
                     <MailIcon />
