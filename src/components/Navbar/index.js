@@ -15,7 +15,7 @@ import {
   Icon,
 } from "./NavbarElements";
 
-import logoIcon from '../../images/muscles.png'
+import logoIcon from '../../images/icon.png'
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
