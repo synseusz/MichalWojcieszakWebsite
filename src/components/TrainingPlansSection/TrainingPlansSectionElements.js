@@ -1,4 +1,3 @@
-import { GiTrophy } from "react-icons/gi";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -8,7 +7,7 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #f9f9f9;
+    background: #010606;
 
     @media screen and (max-width: 1300px) {
         height: 100%;
@@ -51,9 +50,10 @@ export const PlanCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    max-height: 340px;
+    max-height: 350px;
+    min-width: 230px;
     padding: 30px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 3px #f9f9f9;
     transition: all 0.2s ease-in-out;
 
     &:hover {
@@ -69,7 +69,7 @@ export const Icon = styled.img`
 `
 export const H1 = styled.h1`
     font-size: 2.5rem;
-    color: #010606;
+    color: #f9f9f9;
     margin-bottom: 64px;
 
     @media screen and (max-width: 480px) {
@@ -77,8 +77,8 @@ export const H1 = styled.h1`
     }
 `
 export const H2 = styled.h2`
-    font-size: 1rem;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
     text-align: center;
 `
 export const P = styled.p`
@@ -86,12 +86,12 @@ export const P = styled.p`
     text-align: center;
 `
 export const Price = styled.h2`
-    font-size: 1.3rem;
-    margin-top: 15px;
+    font-size: 1.5rem;
+    margin-top: 30px;
     color: #0195FE
 `
 export const Price2 = styled.h2`
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #0195FE
 `
 export const Wrapper2 = styled.div`
