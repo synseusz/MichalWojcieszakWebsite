@@ -90,9 +90,22 @@ export const Price = styled.h2`
     margin-top: 30px;
     color: #0195FE
 `
-export const Price2 = styled.h2`
-    font-size: 1.5rem;
-    color: #0195FE
+export const PlanCard2 = styled.div`
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    max-height: 350px;
+    min-width: 230px;
+    padding: 30px;
+    box-shadow: 0 1px 3px #f9f9f9;
+    transition: all 0.2s ease-in-out;
+
+    @media screen and (max-width: 480px) {
+       transform: scale(0.90);
+    }
 `
 export const Wrapper2 = styled.div`
     max-width: 700px;
@@ -102,6 +115,12 @@ export const Wrapper2 = styled.div`
     align-items: center;
     text-align: center;
     grid-gap: 16px;
-
-
+`
+export const H3 = styled.h2`
+    font-size: 1.2rem;
+    text-align: center;
+`
+export const Price2 = styled.h2`
+    font-size: 1.5rem;
+    color: #0195FE
 `

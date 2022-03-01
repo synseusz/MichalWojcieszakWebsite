@@ -4,7 +4,9 @@ import {
   H1,
   Wrapper,
   PlanCard,
+  PlanCard2,
   H2,
+  H3,
   P,
   Price,
   Price2,
@@ -47,22 +49,22 @@ const TrainingPlans = () => {
       <br />
       <br />
       <H1>Pozostałe Opcje</H1>
-      <PlanCard>
+      <PlanCard2>
         <Wrapper2>
-          <H2>Plan Treningowy (tydzień)</H2>
+          <H3>Plan Treningowy (tydzień)</H3>
           <P>W pełni spersonalizowany tygodniowy plan</P>
           <Price2>150 zł</Price2>
-          <H2>Plan Treningowy (miesiąc)</H2>
+          <H3>Plan Treningowy (miesiąc)</H3>
           <P>
             1 wspólny trening w tygodniu oraz układanie planów na pozostałe
             treningi
           </P>
           <Price2>600 zł</Price2>
-          <H2>Porady Żywieniowe</H2>
+          <H3>Porady Żywieniowe</H3>
           <P>Konsultacja + korekta</P>
           <Price2>150 zł</Price2>
         </Wrapper2>
-      </PlanCard>
+      </PlanCard2>
     </Container>
   );
 };
