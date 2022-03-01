@@ -26,6 +26,23 @@ export const NavbarContainer = styled.div`
     width: 100%;
     padding: 0 24px;
     max-width: 1100px;
+    align-items: center;
+`
+export const LogoContainer = styled.div`
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @media screen and (max-width: 376px) {
+        transform: scale(0.9);
+        width:200px;
+    }
+`
+export const Icon = styled.img`
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 `
 export const NavLogo = styled(LinkS)`
     /*font-family: 'Black Ops One', cursive;*/
@@ -46,7 +63,7 @@ export const MobileIcon = styled.div`
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-100%, 60%);
+        transform: translate(-100%, 65%);
         font-size: 1.8rem;
         cursor: pointer;
         color: #fff;

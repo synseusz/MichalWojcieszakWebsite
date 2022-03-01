@@ -11,7 +11,11 @@ import {
   SocialsWrapper,
   FBIcon,
   IGIcon,
+  LogoContainer,
+  Icon,
 } from "./NavbarElements";
+
+import logoIcon from '../../images/muscles.png'
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -32,6 +36,8 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
+          <LogoContainer>
+          <Icon src={logoIcon} />
           <NavLogo
             to="home"
             smooth={true}
@@ -42,6 +48,7 @@ const Navbar = ({ toggle }) => {
           >
             Michał Wojcieszak
           </NavLogo>
+          </LogoContainer>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
