@@ -135,6 +135,7 @@ export const ContactInfoWrapper = styled.div`
 export const Wrapper2 = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 400px;
   align-self: center;
   margin-top: 50px;
@@ -154,13 +155,16 @@ export const Wrapper2 = styled.div`
 `;
 export const MailWrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 `;
 export const MailIcon = styled(SiGmail)`
   height: 40px;
   width: 40px;
   color: #fff;
+  margin-bottom: 1rem;
 
   @media screen and (max-width: 480px) {
     height: 30px;
@@ -168,23 +172,19 @@ export const MailIcon = styled(SiGmail)`
   }
 `;
 export const Mail = styled.p`
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  text-align: right;
-  width: 100%;
-  align-self: center;
+
 `;
 export const PhoneWrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  padding-top: 20px;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 export const PhoneIcon = styled(FaPhoneAlt)`
   height: 40px;
   width: 40px;
   color: #fff;
+  margin-bottom: 1rem;
 
   @media screen and (max-width: 480px) {
     height: 30px;
@@ -192,12 +192,7 @@ export const PhoneIcon = styled(FaPhoneAlt)`
   }
 `;
 export const Phone = styled.p`
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  width: 100%;
-  align-self: center;
-  text-align: right;
+
 `;
 export const SocialsWrapper = styled.div`
   display: flex;

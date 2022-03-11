@@ -28,11 +28,12 @@ export const NavbarContainer = styled.div`
     max-width: 1100px;
     align-items: center;
 `
-export const LogoContainer = styled.div`
+export const LogoContainer = styled(LinkS)`
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    cursor: pointer;
 
     @media screen and (max-width: 376px) {
         transform: scale(0.9);
@@ -43,17 +44,34 @@ export const Icon = styled.img`
     width: 40px;
     height: 40px;
     margin-right: 10px;
+    cursor: pointer;
 `
-export const NavLogo = styled(LinkS)`
-    /*font-family: 'Black Ops One', cursive;*/
+export const LogoTxtContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+`
+export const NavLogo = styled.p`
     color: #fff;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    /*margin-left: 24px;*/
     text-decoration: none;
+`
+export const NavLogo2 = styled.p`
+    color: #fff;
+    justify-self: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
 `
 export const MobileIcon = styled.div`
     display: none;

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Button } from "../ButtonElement";
 import {
   InfoContainer,
@@ -33,6 +34,11 @@ const InfoSection = ({
 }) => {
   return (
     <>
+    <Helmet>
+      <title>O mnie</title>
+      <meta name="description" content="Najwazniejsze informacje o mnie oraz moim doswiadczeniu" />
+      <link rel="cannonical" href="/o_mnie" />
+    </Helmet>
       <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>

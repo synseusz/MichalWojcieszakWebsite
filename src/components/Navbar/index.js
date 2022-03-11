@@ -13,9 +13,11 @@ import {
   IGIcon,
   LogoContainer,
   Icon,
+  LogoTxtContainer,
+  NavLogo2,
 } from "./NavbarElements";
 
-import logoIcon from '../../images/icon.png'
+import logoIcon from "../../images/icon.png";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -36,9 +38,7 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <LogoContainer>
-          <Icon src={logoIcon} />
-          <NavLogo
+          <LogoContainer
             to="home"
             smooth={true}
             duration={500}
@@ -46,8 +46,11 @@ const Navbar = ({ toggle }) => {
             exact="true"
             offset={-80}
           >
-            Michał Wojcieszak
-          </NavLogo>
+            <Icon src={logoIcon} />
+            <LogoTxtContainer>
+              <NavLogo>Michał Wojcieszak</NavLogo>
+              <NavLogo2>Trener personalny</NavLogo2>
+            </LogoTxtContainer>
           </LogoContainer>
           <MobileIcon onClick={toggle}>
             <FaBars />
