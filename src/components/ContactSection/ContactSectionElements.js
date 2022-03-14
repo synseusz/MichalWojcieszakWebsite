@@ -6,7 +6,7 @@ export const Container = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
   padding: 100px 0;
-  height: 100vh;
+  height: 100%;
 
   @media screen and (max-width: 1300px) {
     height: 100%;

@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Video from "../../videos/KAZ30055.mp4";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import {
   HeroContainer,
   HeroBg,
@@ -20,6 +22,10 @@ const Hero = () => {
     setHover(!hover);
   };
 
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
     <HeroContainer id="home">
       <HeroBg>
@@ -28,9 +34,15 @@ const Hero = () => {
         </VideoBg>
       </HeroBg>
       <HeroContent>
-        <HeroH1>Treningi personalne, dieta, motywacja.</HeroH1>
-        <HeroP>Wspólnie zbudujemy Twoją wymarzoną sylwetkę!</HeroP>
-        <HeroBtnWrapper>
+        <HeroH1 data-aos="fade-down" data-aos-delay="500">Treningi personalne, dieta, motywacja.</HeroH1>
+        <HeroP data-aos="fade-down" data-aos-delay="500">
+          Wspólnie zbudujemy Twoją wymarzoną sylwetkę!
+        </HeroP>
+        <HeroBtnWrapper
+          data-aos="fade-up"
+          data-aos-delay="1500"
+          data-aos-duration="1500"
+        >
           <Button
             to="about"
             onMouseEnter={onHover}

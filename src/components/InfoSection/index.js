@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Helmet } from "react-helmet-async";
 import { Button } from "../ButtonElement";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import {
   InfoContainer,
   InfoWrapper,
@@ -15,6 +17,8 @@ import {
   ImgWrap,
   Img,
 } from "./InfoElements";
+import { useInView } from "react-intersection-observer";
+
 
 const InfoSection = ({
   lightBg,
@@ -32,8 +36,18 @@ const InfoSection = ({
   dark,
   dark2,
 }) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0.2,
+  });
+
+
   return (
-    <>
+    <div ref={ref}>
     <Helmet>
       <title>O mnie</title>
       <meta name="description" content="Najwazniejsze informacje o mnie oraz moim doswiadczeniu" />
@@ -44,9 +58,9 @@ const InfoSection = ({
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Text darkText={darkText}>
+                <TopLine data-aos="fade-right" data-aos-duration="800">{topLine}</TopLine>
+                <Heading lightText={lightText} data-aos="fade-left" data-aos-duration="800">{headline}</Heading>
+                <Text darkText={darkText} data-aos="fade" data-aos-duration="800" data-aos-delay='800'>
                   Troska o własne zdrowie i budowanie formy skłania coraz więcej
                   osób do szukania wsparcia u trenera personalnego. Co prawda
                   ten trend pojawił się w Polsce stosunkowo niedawno, jednak
@@ -63,10 +77,10 @@ const InfoSection = ({
                   z Podopiecznymi zakładając własną działalność gospodarczą i
                   stając się freelancerem nieograniczonym miejscem i czasem.
                 </Text>
-                <TopLine>
+                <TopLine data-aos="fade-right" data-aos-duration="800">
                   Kim jest Trener Personalny i na czym polega moja praca?
                 </TopLine>
-                <Text darkText={darkText}>
+                <Text darkText={darkText} data-aos="fade" data-aos-duration="800" data-aos-delay='800'>
                   Praca trenera personalnego opiera się głównie na indywidualnej
                   formie współpracy z Klientem. Dobór treningu, a niekiedy także
                   diety – to jego główne zadania. Taki personalny instruktor
@@ -83,8 +97,8 @@ const InfoSection = ({
                   trenera personalnego należy także czuwanie nad właściwym
                   wykonywaniem ćwiczeń, aby uniknąć urazów.
                 </Text>
-                <TopLine>Doświadczenie i umiejętności</TopLine>
-                <Text>
+                <TopLine data-aos="fade-right" data-aos-duration="800">Doświadczenie i umiejętności</TopLine>
+                <Text data-aos="fade" data-aos-duration="800" data-aos-delay='800'>
                   Dyplom z AWF-u wiąże się z wyposażeniem w solidne podstawy
                   przygotowujące do zawodu trenera personalnego, jednak nie jest
                   to warunek konieczny. Wiedzę zdobywałem również podczas
@@ -103,14 +117,14 @@ const InfoSection = ({
               </TextWrapper>
             </Column1>
             <Column2>
-              <ImgWrap>
+              <ImgWrap data-aos="fade-left" data-aos-duration="800" data-aos-delay='800'>
                 <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
-    </>
+    </div>
   );
 };
 

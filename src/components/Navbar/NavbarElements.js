@@ -70,7 +70,7 @@ export const NavLogo2 = styled.p`
     align-items: center;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'Ubuntu', sans-serif;
 `
 export const MobileIcon = styled.div`
