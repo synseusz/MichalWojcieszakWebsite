@@ -8,7 +8,6 @@ import {
   TextWrapper,
   TopLine,
   Heading,
-  Heading2,
   MailWrapper,
   MailIcon,
   Mail,

@@ -1,6 +1,5 @@
 import React, {useEffect} from "react";
 import { Helmet } from "react-helmet-async";
-import { Button } from "../ButtonElement";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import {
@@ -28,13 +27,8 @@ const InfoSection = ({
   lightText,
   headline,
   darkText,
-  buttonLabel,
-  buttonRedirectId,
   img,
   alt,
-  primary,
-  dark,
-  dark2,
 }) => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -117,11 +111,12 @@ const InfoSection = ({
               </TextWrapper>
             </Column1>
             <Column2>
-              <ImgWrap data-aos="fade-left" data-aos-duration="800" data-aos-delay='800'>
+              <ImgWrap data-aos="fade" data-aos-duration="800" data-aos-delay='800'>
                 <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>
+          {/*<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftrener.michal.wojcieszak%2Fphotos%2Fa.906223889465662%2F927044647383586%2F%3Ftype%3D3&show_text=true&width=500" width="500" height="583" style={{border:"none",overflow:"hidden", color:"white"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" />*/}
         </InfoWrapper>
       </InfoContainer>
     </div>

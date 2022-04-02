@@ -13,7 +13,7 @@ import {
   Name,
   Line,
   GoogleMapsLink,
-} from "./ContactSectionElements";
+} from "./ContactSectionElements2";
 
 const GoogleMapElement = () => {
   const Map = () => {

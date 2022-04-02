@@ -15,24 +15,6 @@ export const AboutData = {
     darkText: false
 };
 
-/*export const CollabData = {
-    id: 'collab',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'Jesteś właścicielem siłowni?',
-    headline: 'Porozmawiajmy o współpracy...',
-    description:
-        'Jestem osobą, która ponad wszystko ceni sobie równowagę w życiu. Rozwój umysłu jest tak samo ważny, jak utrzymywanie ciała w doskonałej kondycji. Od 11 lat jestem związany hobbystycznie i zawodowo ze sportem. Siłownia to mój żywioł i pasja. Dzień bez treningu uważam za dzień stracony i tego samego uczę moich Podopiecznych. W pracy z nimi szczególny nacisk kładę na poprawienie kondycji i sylwetki dzięki odpowiednim ćwiczeniom i indywidualnie dobranej diecie.',
-    buttonLabel: 'Kontakt',
-    buttonRedirectId: 'contact',
-    imgStart: false,
-    img: svg1,
-    alt: 'Collaboration Icon',
-    dark: true,
-    primary: true,
-    darkText: false
-}; */
 
 export const ContactData = {
     id: 'contact',
@@ -41,11 +23,11 @@ export const ContactData = {
     lightTextDesc: true,
     topLine: 'Gotowy(a) na metamorfozę?',
     headline: 'Tu mnie znajdziesz',
-    topLine2: 'Ponaddto',
-    headline2: 'Kontakt',
     imgStart: false,
-    img: require('../../images/image1.jpg'),
-    alt: 'Michał Wojcieszak',
+    img: require('../../images/RioTopGym.PNG'),
+    img2: require('../../images/HolmesPlaceOVO.PNG'),
+    alt: 'RioTop Gym Tarasy Grabiszynskie',
+    alt2: 'Holmes Place OVO',
     dark: true,
     primary: true,
     darkText: false
