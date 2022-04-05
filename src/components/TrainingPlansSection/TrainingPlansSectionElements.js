@@ -44,7 +44,8 @@ export const Wrapper = styled.div`
   }
 `;
 export const PlanCard = styled.div`
-  background: #fff;
+  /*background: #fff;*/
+  color:#fff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -53,8 +54,8 @@ export const PlanCard = styled.div`
   max-height: 350px;
   min-width: 230px;
   padding: 30px;
-  box-shadow: 0 1px 3px #f9f9f9;
   transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
 
   &:hover {
     transform: scale(1.05);
@@ -88,10 +89,12 @@ export const P = styled.p`
 export const Price = styled.h2`
   font-size: 1.5rem;
   margin-top: 30px;
-  color: #0195fe;
+  //color: #0195fe;*/
+  color: #EDBF61
 `;
 export const PlanCard2 = styled.div`
-  background: #fff;
+  /*background: #fff;*/
+  color:#fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,8 +103,8 @@ export const PlanCard2 = styled.div`
   max-height: 350px;
   min-width: 230px;
   padding: 30px;
-  box-shadow: 0 1px 3px #f9f9f9;
   transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
 
   @media screen and (max-width: 768px) {
     margin-top: 50px;
@@ -134,5 +137,6 @@ export const H3 = styled.h2`
 `;
 export const Price2 = styled.h2`
   font-size: 1.5rem;
-  color: #0195fe;
+  //color: #0195fe;//
+  color: #FFD700
 `;

@@ -101,7 +101,7 @@ const ContactSection2 = ({
                   </a>
                 </TextWrapper>
               </Column1>
-              <Column2 data-aos="fade" data-aos-duration="1000" data-aos-delay='1200'>
+              <Column2 data-aos="fade" data-aos-duration="1000" data-aos-delay='1100'>
                 <ContactWrapper>
                   <MailWrapper>
                     <MailIcon />
