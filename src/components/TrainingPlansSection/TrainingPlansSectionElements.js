@@ -90,8 +90,9 @@ export const Price = styled.h2`
   font-size: 1.5rem;
   margin-top: 30px;
   //color: #0195fe;*/
-  color: #EDBF61
+  color: black
 `;
+
 export const PlanCard2 = styled.div`
   /*background: #fff;*/
   color:#fff;
@@ -101,20 +102,21 @@ export const PlanCard2 = styled.div`
   align-items: center;
   border-radius: 10px;
   max-height: 350px;
-  min-width: 230px;
+  height: 300px;
+  min-width: 250px;
   padding: 30px;
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
 
-  @media screen and (max-width: 768px) {
-    margin-top: 50px;
-    padding-left: auto;
-    padding-right: auto;
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
   }
+
   @media screen and (max-width: 480px) {
-    transform: scale(0.9);
-    width: 90vw;
-    padding: 0
+    height: 100%;
+    width: 80vw;
   }
 `;
 export const Wrapper2 = styled.div`
@@ -122,21 +124,15 @@ export const Wrapper2 = styled.div`
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
   align-items: center;
   align-self: center;
   text-align: center;
   grid-gap: 16px;
-
-  @media screen and (max-width: 480px) {
-    transform: scale(0.9);
+  
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
   }
-`;
-export const H3 = styled.h2`
-  font-size: 1.2rem;
-  text-align: center;
-`;
-export const Price2 = styled.h2`
-  font-size: 1.5rem;
-  //color: #0195fe;//
-  color: #FFD700
+
 `;

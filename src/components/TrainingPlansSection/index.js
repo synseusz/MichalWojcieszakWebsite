@@ -9,10 +9,8 @@ import {
   PlanCard,
   PlanCard2,
   H2,
-  H3,
   P,
   Price,
-  Price2,
   Wrapper2,
 } from "./TrainingPlansSectionElements";
 import { useInView } from "react-intersection-observer";
@@ -32,7 +30,7 @@ const TrainingPlans = () => {
     //["#3E47C4", "#2687F4"],
   ];
 
-  const ironGradients = [
+  /*const ironGradients = [
     //["#E4E1DF", "#E5E3E0"],
     //["#E5E3E0", "#503A36"],
     ["#E5E3E0", "#503A36"],
@@ -46,9 +44,12 @@ const TrainingPlans = () => {
   const silverGradients = [
     ["#B0C8C5", "#536769"],
     //["#536769", "#B0C8C5"]
+  ];*/
+  const goldGradients = [
+    ["#B07032", "#EDBF61"],
+    ["#FBF295", "#BC8B3D"],
+    ["#BC8B3D", "#FBF295"],
   ];
-  const goldGradients = [["#B07032", "#EDBF61"]];
-  const diamondGradients = [["#CAFBFE", "#D8F3FF"]];
 
   return (
     <div ref={ref}>
@@ -67,9 +68,9 @@ const TrainingPlans = () => {
               <P>1 trening</P>
               <Gradient
                 gradients={goldGradients}
-                angle="180deg"
+                angle="45deg"
                 property="text"
-                duration={2000}
+                duration={1000}
               >
                 <Price>150 zł</Price>
               </Gradient>
@@ -85,9 +86,9 @@ const TrainingPlans = () => {
               <P>6 treningów</P>
               <Gradient
                 gradients={goldGradients}
-                angle="180deg"
+                angle="45deg"
                 property="text"
-                duration={2000}
+                duration={1000}
               >
                 <Price>750 zł</Price>
               </Gradient>
@@ -103,9 +104,9 @@ const TrainingPlans = () => {
               <P>12 treningów</P>
               <Gradient
                 gradients={goldGradients}
-                angle="180deg"
+                angle="45deg"
                 property="text"
-                duration={2000}
+                duration={1000}
               >
                 <Price>1400 zł</Price>
               </Gradient>
@@ -121,9 +122,9 @@ const TrainingPlans = () => {
               <P>25 treningów</P>
               <Gradient
                 gradients={goldGradients}
-                angle="180deg"
+                angle="45deg"
                 property="text"
-                duration={2000}
+                duration={1000}
               >
                 <Price>2750 zł</Price>
               </Gradient>
@@ -139,9 +140,9 @@ const TrainingPlans = () => {
               <P>50 treningów</P>
               <Gradient
                 gradients={goldGradients}
-                angle="180deg"
+                angle="45deg"
                 property="text"
-                duration={2000}
+                duration={1000}
               >
                 <Price>5000 zł</Price>
               </Gradient>
@@ -155,49 +156,65 @@ const TrainingPlans = () => {
           Pozostałe Opcje
         </H1>
         <div data-aos="fade" data-aos-duration="1000" data-aos-delay="1500">
-          <Gradient
-            style={{ borderRadius: "10px" }}
-            gradients={cardGradients}
-            angle="45deg"
-          >
-            <PlanCard2>
-              <Wrapper2>
-                <H3>Plan Treningowy (tydzień)</H3>
+          <Wrapper2>
+            <Gradient
+              style={{ borderRadius: "10px" }}
+              gradients={cardGradients}
+              angle="45deg"
+            >
+              <PlanCard2>
+                <H2>Plan Treningowy (tydzień)</H2>
                 <P>W pełni spersonalizowany tygodniowy plan</P>
                 <Gradient
                   gradients={goldGradients}
-                  angle="180deg"
+                  angle="45deg"
                   property="text"
-                  duration={2000}
+                  duration={1000}
                 >
-                  <Price2>150 zł</Price2>
+                  <Price>150 zł</Price>
                 </Gradient>
-                <H3>Plan Treningowy (miesiąc)</H3>
+              </PlanCard2>
+            </Gradient>
+            <Gradient
+              style={{ borderRadius: "10px" }}
+              gradients={cardGradients}
+              angle="45deg"
+            >
+              <PlanCard2>
+                <H2>Plan Treningowy (miesiąc)</H2>
                 <P>
                   1 wspólny trening w tygodniu oraz układanie planów na
                   pozostałe treningi
                 </P>
                 <Gradient
                   gradients={goldGradients}
-                  angle="180deg"
+                  angle="45deg"
                   property="text"
-                  duration={2000}
+                  duration={1000}
                 >
-                  <Price2>600 zł</Price2>
+                  <Price>600 zł</Price>
                 </Gradient>
-                <H3>Porady Żywieniowe</H3>
+              </PlanCard2>
+            </Gradient>
+            <Gradient
+              style={{ borderRadius: "10px" }}
+              gradients={cardGradients}
+              angle="45deg"
+            >
+              <PlanCard2>
+                <H2>Porady Żywieniowe</H2>
                 <P>Konsultacja + korekta</P>
                 <Gradient
                   gradients={goldGradients}
-                  angle="180deg"
+                  angle="45deg"
                   property="text"
-                  duration={2000}
+                  duration={1000}
                 >
-                  <Price2>150 zł</Price2>
+                  <Price>150 zł</Price>
                 </Gradient>
-              </Wrapper2>
-            </PlanCard2>
-          </Gradient>
+              </PlanCard2>
+            </Gradient>
+          </Wrapper2>
         </div>
       </Container>
     </div>
