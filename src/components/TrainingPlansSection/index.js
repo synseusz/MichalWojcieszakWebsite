@@ -30,21 +30,6 @@ const TrainingPlans = () => {
     //["#3E47C4", "#2687F4"],
   ];
 
-  /*const ironGradients = [
-    //["#E4E1DF", "#E5E3E0"],
-    //["#E5E3E0", "#503A36"],
-    ["#E5E3E0", "#503A36"],
-  ];
-  const bronzeGradients = [
-    //["#E6D4B8", "#6D4136"],
-    ["#fff", "#fff"],
-    //["#6D4136", "#E6D4B8"],
-    //["#90644A", "#643331"],
-  ];
-  const silverGradients = [
-    ["#B0C8C5", "#536769"],
-    //["#536769", "#B0C8C5"]
-  ];*/
   const goldGradients = [
     ["#B07032", "#EDBF61"],
     ["#FBF295", "#BC8B3D"],
