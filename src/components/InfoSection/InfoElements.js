@@ -89,3 +89,18 @@ export const Img = styled.img`
     /*border: 2px outset #0195FE;*/
 
 `
+export const IFrameContainer = styled.div`
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+`
+export const IFrame = styled.iframe`
+    color: red;
+    background: #fff;
+    border: 2px solid #2687F4;
+    width: 70vw;
+`

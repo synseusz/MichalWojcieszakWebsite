@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -15,9 +15,10 @@ import {
   BtnWrap,
   ImgWrap,
   Img,
+  IFrame,
+  IFrameContainer,
 } from "./InfoElements";
 import { useInView } from "react-intersection-observer";
-
 
 const InfoSection = ({
   lightBg,
@@ -39,22 +40,37 @@ const InfoSection = ({
     threshold: 0.2,
   });
 
-
   return (
     <div ref={ref}>
-    <Helmet>
-      <title>O mnie</title>
-      <meta name="description" content="Najwazniejsze informacje o mnie oraz moim doswiadczeniu" />
-      <link rel="cannonical" href="/o_mnie" />
-    </Helmet>
+      <Helmet>
+        <title>O mnie</title>
+        <meta
+          name="description"
+          content="Najwazniejsze informacje o mnie oraz moim doswiadczeniu"
+        />
+        <link rel="cannonical" href="/o_mnie" />
+      </Helmet>
       <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine data-aos="fade-right" data-aos-duration="800">{topLine}</TopLine>
-                <Heading lightText={lightText} data-aos="fade-left" data-aos-duration="800">{headline}</Heading>
-                <Text darkText={darkText} data-aos="fade" data-aos-duration="800" data-aos-delay='800'>
+                <TopLine data-aos="fade-right" data-aos-duration="800">
+                  {topLine}
+                </TopLine>
+                <Heading
+                  lightText={lightText}
+                  data-aos="fade-left"
+                  data-aos-duration="800"
+                >
+                  {headline}
+                </Heading>
+                <Text
+                  darkText={darkText}
+                  data-aos="fade"
+                  data-aos-duration="800"
+                  data-aos-delay="800"
+                >
                   Troska o własne zdrowie i budowanie formy skłania coraz więcej
                   osób do szukania wsparcia u trenera personalnego. Co prawda
                   ten trend pojawił się w Polsce stosunkowo niedawno, jednak
@@ -74,7 +90,12 @@ const InfoSection = ({
                 <TopLine data-aos="fade-right" data-aos-duration="800">
                   Kim jest Trener Personalny i na czym polega moja praca?
                 </TopLine>
-                <Text darkText={darkText} data-aos="fade" data-aos-duration="800" data-aos-delay='800'>
+                <Text
+                  darkText={darkText}
+                  data-aos="fade"
+                  data-aos-duration="800"
+                  data-aos-delay="800"
+                >
                   Praca trenera personalnego opiera się głównie na indywidualnej
                   formie współpracy z Klientem. Dobór treningu, a niekiedy także
                   diety – to jego główne zadania. Taki personalny instruktor
@@ -91,8 +112,14 @@ const InfoSection = ({
                   trenera personalnego należy także czuwanie nad właściwym
                   wykonywaniem ćwiczeń, aby uniknąć urazów.
                 </Text>
-                <TopLine data-aos="fade-right" data-aos-duration="800">Doświadczenie i umiejętności</TopLine>
-                <Text data-aos="fade" data-aos-duration="800" data-aos-delay='800'>
+                <TopLine data-aos="fade-right" data-aos-duration="800">
+                  Doświadczenie i umiejętności
+                </TopLine>
+                <Text
+                  data-aos="fade"
+                  data-aos-duration="800"
+                  data-aos-delay="800"
+                >
                   Dyplom z AWF-u wiąże się z wyposażeniem w solidne podstawy
                   przygotowujące do zawodu trenera personalnego, jednak nie jest
                   to warunek konieczny. Wiedzę zdobywałem również podczas
@@ -101,22 +128,42 @@ const InfoSection = ({
                   jest z reguły nastawiona na pracę indywidualną z Klientem, jak
                   i na prowadzenie zajęć grupowych.
                   <br />
-                  <br />Naturalne środowisko pracy to oczywiście siłownia i
-                  klub fitness. Zdaję sobie sprawę, że w mojej profesji
-                  szczególnie ważne są rekomendacje, dlatego podchodzę z troską
-                  i zaangażowaniem do każdego Klienta. Komunikatywność i
-                  otwartość na drugiego człowieka są w moim zawodzie podstawą, a
+                  <br />
+                  Naturalne środowisko pracy to oczywiście siłownia i klub
+                  fitness. Zdaję sobie sprawę, że w mojej profesji szczególnie
+                  ważne są rekomendacje, dlatego podchodzę z troską i
+                  zaangażowaniem do każdego Klienta. Komunikatywność i otwartość
+                  na drugiego człowieka są w moim zawodzie podstawą, a
                   rekomendacje najlepszą formą marketingu.
-                </Text>            
+                </Text>
               </TextWrapper>
             </Column1>
             <Column2>
-              <ImgWrap data-aos="fade" data-aos-duration="800" data-aos-delay='800'>
+              <ImgWrap
+                data-aos="fade"
+                data-aos-duration="800"
+                data-aos-delay="800"
+              >
                 <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>
-          {/*<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftrener.michal.wojcieszak%2Fphotos%2Fa.906223889465662%2F927044647383586%2F%3Ftype%3D3&show_text=true&width=500" width="500" height="583" style={{border:"none",overflow:"hidden", color:"white"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" />*/}
+          <IFrameContainer>
+            <IFrame
+              src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftrener.michal.wojcieszak%2Fphotos%2Fa.906223889465662%2F927044647383586%2F%3Ftype%3D3&show_text=true&width=500&colorscheme=dark"
+              width="500"
+              height="583"
+              style={{ border:"none", overflow: "hidden" }}
+              scrolling="no"
+              frameborder="0"
+              allowfullscreen="true"
+              colorscheme="dark"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              data-hide-cover="false"
+            >
+            </IFrame>
+            {/*<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftrener.michal.wojcieszak%2Fphotos%2Fa.906223889465662%2F927044647383586%2F%3Ftype%3D3&show_text=true&width=500" width="500" height="583" style={{border:"none",overflow:"hidden", color:"white"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" />*/}
+          </IFrameContainer>
         </InfoWrapper>
       </InfoContainer>
     </div>
