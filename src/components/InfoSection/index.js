@@ -17,9 +17,10 @@ import {
   Img,
   IFrame,
   IFrameContainer,
+  Heading2,
 } from "./InfoElements";
 import { useInView } from "react-intersection-observer";
-import ResponsiveCarousel from "./Carousel"
+import ResponsiveCarousel from "./Carousel";
 
 const InfoSection = ({
   lightBg,
@@ -150,6 +151,7 @@ const InfoSection = ({
             </Column2>
           </InfoRow>
           <IFrameContainer>
+            <Heading2>Metamorfozy moich podopiecznych</Heading2>
             <ResponsiveCarousel />
           </IFrameContainer>
         </InfoWrapper>

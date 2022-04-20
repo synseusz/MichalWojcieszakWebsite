@@ -93,17 +93,24 @@ export const IFrameContainer = styled.div`
     color: #fff;
     display: flex;
     justify-content: center;
-    border: 1px solid red;
+    flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 100px;
+`
+export const Heading2 = styled.h1`
+    color: #0195FE;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
 `
 export const CarouselIMGcontainer = styled.div`
     display: flex;
     justify-content: center;
     justify-self:center;
     align-self:center;
-    border: 1px solid red;
     text-align: center;
     align-items: center;
 `
