@@ -15,9 +15,11 @@ import {
   Icon,
   LogoTxtContainer,
   NavLogo2,
+  BooksyIcon,
 } from "./NavbarElements";
 
 import logoIcon from "../../images/icon.png";
+import booksyIcon from "../../images/booksyIcon.PNG"
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);

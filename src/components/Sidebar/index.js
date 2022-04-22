@@ -9,7 +9,12 @@ import {
   SocialsWrap,
   FBIcon,
   IGIcon,
+  BooksyIcon,
+  BooksyTxt,
+  BooksyLinkContainer,
 } from "./SidebarElements";
+
+import booksyIcon2 from "../../images/booksyIcon2.png";
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -65,6 +70,13 @@ const Sidebar = ({ isOpen, toggle }) => {
             <IGIcon />
           </a>
         </SocialsWrap>
+
+        <BooksyLinkContainer>
+          <BooksyTxt>Umów sie na trening!</BooksyTxt>
+          <a href="https://www.booksy.com" target="_blank" rel="noreferrer">
+            <BooksyIcon src={booksyIcon2} />
+          </a>
+        </BooksyLinkContainer>
       </SidebarWrapper>
     </SidebarContainer>
   );

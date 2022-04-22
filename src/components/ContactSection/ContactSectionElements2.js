@@ -199,6 +199,22 @@ export const IGIcon = styled(FaInstagram)`
     width: 40px;
   }
 `;
+export const BooksyLinkContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top:100px;
+`
+export const BooksyTxt = styled.p`
+  font-size: 20px;
+  margin-bottom: 20px;
+`
+export const BooksyIcon = styled.img`
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+`
 
 /* GOOGLE MAP ELEMENT */
 export const MapContainer = styled.div`

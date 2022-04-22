@@ -150,3 +150,10 @@ export const IGIcon = styled(FaInstagram)`
         transition: 0.2s ease-in-out;
     }
 `
+export const BooksyIcon = styled.img`
+    color: #fff;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+
+`

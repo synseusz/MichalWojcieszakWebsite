@@ -26,8 +26,13 @@ import {
   ContactWrapper,
   IMGWrap,
   IMG,
+  BooksyLinkContainer,
+  BooksyTxt,
+  BooksyIcon,
 } from "./ContactSectionElements2";
 import GoogleMapElement from "./GoogleMap";
+
+import booksyIcon2 from "../../images/booksyIcon2.png";
 
 const ContactSection2 = ({
   lightBg,
@@ -55,14 +60,18 @@ const ContactSection2 = ({
       <Container lightBg={lightBg} id={id}>
         <Wrapper>
           <TextWrapper>
-            <TopLine data-aos="fade" data-aos-duration="1000" data-aos-delay='300'>
+            <TopLine
+              data-aos="fade"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
               {topLine}
             </TopLine>
             <Heading
               lightText={lightText}
               data-aos="fade"
               data-aos-duration="1000"
-              data-aos-delay='300'
+              data-aos-delay="300"
             >
               {headline}
             </Heading>
@@ -70,7 +79,11 @@ const ContactSection2 = ({
           <GoogleMapElement />
           <ContactInfoWrapper>
             <Row imgStart={imgStart}>
-              <Column1 data-aos="fade" data-aos-duration="1000" data-aos-delay='1000'>
+              <Column1
+                data-aos="fade"
+                data-aos-duration="1000"
+                data-aos-delay="1000"
+              >
                 <TextWrapper>
                   <TopLine>Rio Top Gym</TopLine>
                   <IMGWrap>
@@ -101,7 +114,11 @@ const ContactSection2 = ({
                   </a>
                 </TextWrapper>
               </Column1>
-              <Column2 data-aos="fade" data-aos-duration="1000" data-aos-delay='1100'>
+              <Column2
+                data-aos="fade"
+                data-aos-duration="1000"
+                data-aos-delay="1100"
+              >
                 <ContactWrapper>
                   <MailWrapper>
                     <MailIcon />
@@ -128,6 +145,16 @@ const ContactSection2 = ({
                     <IGIcon />
                   </a>
                 </SocialsWrapper>
+                <BooksyLinkContainer>
+                  <BooksyTxt>Umów sie na trening!</BooksyTxt>
+                  <a
+                    href="https://www.booksy.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <BooksyIcon src={booksyIcon2} />
+                  </a>
+                </BooksyLinkContainer>
               </Column2>
             </Row>
           </ContactInfoWrapper>
