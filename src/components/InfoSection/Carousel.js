@@ -5,6 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 import zdjecie1 from "../../images/metamorfoza1.png";
 import zdjecie2 from "../../images/metamorfoza2.png";
 import zdjecie3 from "../../images/metamorfoza3.png";
+import zdjecie4 from "../../images/metamorfoza4.png";
 
 const ResponsiveCarousel = () => {
   return (
@@ -18,6 +19,9 @@ const ResponsiveCarousel = () => {
       </div>
       <div>
         <img src={zdjecie3} alt="Michal Wojcieszak metamorfoza 3" />
+      </div>
+      <div>
+        <img src={zdjecie4} alt="Michal Wojcieszak metamorfoza 4" />
       </div>
     </Carousel>
   );

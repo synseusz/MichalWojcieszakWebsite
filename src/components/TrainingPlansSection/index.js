@@ -133,10 +133,12 @@ const TrainingPlans = () => {
             </PlanCard>
           </Gradient>
         </Wrapper>
-        <br />
-        <br />
-        <br />
-        <H1 data-aos="fade-down" data-aos-duration="800" data-aos-delay="1100">
+        <H1
+          style={{ marginTop: "100px" }}
+          data-aos="fade-down"
+          data-aos-duration="800"
+          data-aos-delay="1100"
+        >
           Pozostałe Opcje
         </H1>
         <div data-aos="fade" data-aos-duration="1000" data-aos-delay="1500">
