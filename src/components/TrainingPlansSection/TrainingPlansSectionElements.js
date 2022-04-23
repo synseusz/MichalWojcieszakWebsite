@@ -48,10 +48,10 @@ export const PlanCard = styled.div`
   color:#fff;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   border-radius: 10px;
-  max-height: 350px;
+  min-height: 208px;
   min-width: 230px;
   padding: 30px;
   transition: all 0.2s ease-in-out;

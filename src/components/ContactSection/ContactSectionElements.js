@@ -7,22 +7,10 @@ export const Container = styled.div`
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
   padding: 100px 0;
   height: 100%;
-
-  @media screen and (max-width: 1300px) {
-    height: 100%;
-  }
-  @media screen and (max-width: 1000px) {
-    height: 100%;
-  }
-  @media screen and (max-width: 768px) {
-    height: 100%;
-  }
-  @media screen and (max-width: 480px) {
-    height: 100%;
-  }
 `;
 export const Wrapper = styled.div`
-  display: grid;
+  display: flex;
+  flex-direction: column;
   z-index: 1;
   width: 100%;
   max-width: 1100px;
@@ -50,7 +38,6 @@ export const Column1 = styled.div`
 export const Column2 = styled.div`
   padding: 0 15px;
   grid-area: col2;
-  margin-top: 100px;
 
   @media screen and (max-width: 768px) {
     margin-top: 40px;
@@ -58,12 +45,44 @@ export const Column2 = styled.div`
   @media screen and (max-width: 480px) {
     margin-top: 30px;
   }
-  
 `;
 export const TextWrapper = styled.div`
-  max-width: 540px;
   padding-top: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+export const TopLine = styled.p`
+  color: #0195fe;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-align: center;
+`;
+export const IMGWrap = styled.div`
+  max-width: 300px;
+  height: 100%;
+`;
+export const IMG = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+`;
+export const Heading = styled.h1`
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  text-align: center;
+
+  @media screen and (max-width: 480px) {
+    font-size: 30px;
+  }
 `;
 export const Text = styled.p`
   font-size: 15px;
@@ -82,46 +101,11 @@ export const Link = styled.p`
     text-decoration: underline;
   }
 `;
-export const TopLine = styled.p`
-  color: #0195fe;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-  text-align: center;
-`;
-export const Heading = styled.h1`
-  margin-bottom: 24px;
-  font-size: 48px;
-  line-height: 1.1;
-  font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
-  text-align: center;
-
-  @media screen and (max-width: 480px) {
-    font-size: 30px;
-  }
-`;
-export const Heading2 = styled.h2`
-  margin-bottom: 100px;
-  font-size: 40px;
-  line-height: 1.1;
-  font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
-  text-align: center;
-
-  @media screen and (max-width: 480px) {
-    font-size: 24px;
-    margin-bottom: 50px;
-  }
-`;
 export const ContactInfoWrapper = styled.div`
-  max-width: 540px;
   display: flex;
   flex-direction: column;
   font-size: 20px;
+  margin-top: 50px;
 
   @media screen and (max-width: 768px) {
     margin-top: 50px;
@@ -130,28 +114,13 @@ export const ContactInfoWrapper = styled.div`
     font-size: 15px;
     margin-top: 50px;
   }
-  
 `;
-export const Wrapper2 = styled.div`
+export const ContactWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 400px;
+  align-items: center;
   align-self: center;
-  margin-top: 50px;
-
-  @media screen and (max-width: 1300px) {
-    width: 380px;
-  }
-  @media screen and (max-width: 1000px) {
-    width: 300px;
-  }
-  @media screen and (max-width: 768px) {
-    width: 400px;
-  }
-  @media screen and (max-width: 480px) {
-    width: 300px;
-  }
 `;
 export const MailWrapper = styled.div`
   display: flex;
@@ -171,9 +140,7 @@ export const MailIcon = styled(SiGmail)`
     width: 30px;
   }
 `;
-export const Mail = styled.p`
-
-`;
+export const Mail = styled.p``;
 export const PhoneWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -191,9 +158,7 @@ export const PhoneIcon = styled(FaPhoneAlt)`
     width: 30px;
   }
 `;
-export const Phone = styled.p`
-
-`;
+export const Phone = styled.p``;
 export const SocialsWrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -234,23 +199,39 @@ export const IGIcon = styled(FaInstagram)`
     width: 40px;
   }
 `;
+export const BooksyLinkContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top:100px;
+`
+export const BooksyTxt = styled.p`
+  font-size: 20px;
+  margin-bottom: 20px;
+`
+export const BooksyIcon = styled.img`
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+`
 
 /* GOOGLE MAP ELEMENT */
 export const MapContainer = styled.div`
   height: 400px;
-  width: 500px;
-  border: 3px solid #0195fe;
+  width: 90%;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
 
   @media screen and (max-width: 1000px) {
     height: 400px;
-    width: 400px;
+    width: 90%;
   }
   @media screen and (max-width: 480px) {
     height: 350px;
     width: 100%;
+    margin-bottom: 50px;
   }
 `;
 export const InfoWindowTextWrapper = styled.div`

@@ -20,8 +20,7 @@ const TrainingPlans = () => {
     Aos.init({ duration: 2000 });
   }, []);
 
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
+  const { ref } = useInView({
     threshold: 0.2,
   });
 

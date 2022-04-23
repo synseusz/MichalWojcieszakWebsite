@@ -15,11 +15,9 @@ import {
   Icon,
   LogoTxtContainer,
   NavLogo2,
-  BooksyIcon,
 } from "./NavbarElements";
 
 import logoIcon from "../../images/icon.png";
-import booksyIcon from "../../images/booksyIcon.PNG"
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -104,7 +102,7 @@ const Navbar = ({ toggle }) => {
               <FBIcon />
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/call.me.mr.king/"
               target="_blank"
               rel="noreferrer"
             >

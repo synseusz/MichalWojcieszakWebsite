@@ -66,7 +66,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           >
             <FBIcon />
           </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/call.me.mr.king/" target="_blank" rel="noreferrer">
             <IGIcon />
           </a>
         </SocialsWrap>

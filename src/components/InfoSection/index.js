@@ -12,10 +12,8 @@ import {
   TopLine,
   Heading,
   Text,
-  BtnWrap,
   ImgWrap,
   Img,
-  IFrame,
   IFrameContainer,
   Heading2,
 } from "./InfoElements";
@@ -37,8 +35,7 @@ const InfoSection = ({
     Aos.init({ duration: 2000 });
   }, []);
 
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
+  const { ref } = useInView({
     threshold: 0.2,
   });
 
@@ -142,7 +139,7 @@ const InfoSection = ({
             </Column1>
             <Column2>
               <ImgWrap
-                data-aos="fade"
+                data-aos="fade-up"
                 data-aos-duration="800"
                 data-aos-delay="800"
               >
@@ -150,7 +147,11 @@ const InfoSection = ({
               </ImgWrap>
             </Column2>
           </InfoRow>
-          <IFrameContainer>
+          <IFrameContainer
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="800"
+          >
             <Heading2>Metamorfozy moich podopiecznych</Heading2>
             <ResponsiveCarousel />
           </IFrameContainer>
