@@ -150,7 +150,7 @@ const ContactSection2 = ({
                 <BooksyLinkContainer>
                   <BooksyTxt>Umów sie na trening!</BooksyTxt>
                   <a
-                    href="https://www.booksy.com"
+                    href="https://booksy.com/pl-pl/137206_michal-wojcieszak-treningi-personalne_trening-i-dieta_13750_wroclaw#ba_s=sh_1"
                     target="_blank"
                     rel="noreferrer"
                   >

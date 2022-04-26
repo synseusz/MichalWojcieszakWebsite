@@ -73,7 +73,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 
         <BooksyLinkContainer>
           <BooksyTxt>Umów sie na trening!</BooksyTxt>
-          <a href="https://www.booksy.com" target="_blank" rel="noreferrer">
+          <a href="https://booksy.com/pl-pl/137206_michal-wojcieszak-treningi-personalne_trening-i-dieta_13750_wroclaw#ba_s=sh_1" target="_blank" rel="noreferrer">
             <BooksyIcon src={booksyIcon2} />
           </a>
         </BooksyLinkContainer>
