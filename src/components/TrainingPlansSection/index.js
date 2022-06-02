@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Gradient } from "react-gradient";
@@ -20,7 +21,7 @@ const TrainingPlans = () => {
     Aos.init({ duration: 2000 });
   }, []);
 
-  const { ref } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0.2,
   });
 
@@ -37,6 +38,16 @@ const TrainingPlans = () => {
 
   return (
     <div ref={ref}>
+      {inView ? (
+        <Helmet>
+          <title>Pakiety treningowe</title>
+          <meta
+            name="description"
+            content="Wszystkie informacje dotyczace aktualnie dostepnych pakietow treningowych. "
+          />
+          <link rel="cannonical" href="/pakiety_treningowe" />
+        </Helmet>
+      ) : null}
       <Container id="training-plans">
         <H1 data-aos="fade-down" data-aos-duration="800">
           Pakiety Treningowe

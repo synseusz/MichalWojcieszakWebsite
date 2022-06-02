@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import {
   Nav,
   NavbarContainer,
@@ -45,6 +47,9 @@ const Navbar = ({ toggle }) => {
             spy={true}
             exact="true"
             offset={-80}
+            onClick={() => {
+              <Link to="/123" />;
+            }}
           >
             <Icon src={logoIcon} />
             <LogoTxtContainer>

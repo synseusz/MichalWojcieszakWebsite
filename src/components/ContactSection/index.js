@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useInView } from "react-intersection-observer";
@@ -50,13 +51,23 @@ const ContactSection2 = ({
     Aos.init({ duration: 2000 });
   }, []);
 
-  const { ref } = useInView({
+  const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0.2,
   });
 
   return (
     <div ref={ref}>
+      {inView ? (
+        <Helmet>
+          <title>Kontakt</title>
+          <meta
+            name="description"
+            content="Wszystkie dane kontaktowe oraz dodatkowe informacje gdzie mnie znalezc oraz gdzie pracuje Wroclaw. Zajdziecie tutaj rowniez link do mojej strony na Facebooku, moj Instagram, numer telefonu oraz Google Mape z zaznaczonymi punktami oraz adresami silowni."
+          />
+          <link rel="cannonical" href="/kontakt" />
+        </Helmet>
+      ) : null}
       <Container lightBg={lightBg} id={id}>
         <Wrapper>
           <TextWrapper>

@@ -31,24 +31,28 @@ const InfoSection = ({
   img,
   alt,
 }) => {
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
 
-  const { ref } = useInView({
+
+  const { ref, inView } = useInView({
     threshold: 0.2,
   });
 
   return (
     <div ref={ref}>
-      <Helmet>
-        <title>O mnie</title>
-        <meta
-          name="description"
-          content="Najwazniejsze informacje o mnie oraz moim doswiadczeniu"
-        />
-        <link rel="cannonical" href="/o_mnie" />
-      </Helmet>
+      {inView ? (
+        <Helmet>
+          <title>O mnie</title>
+          <meta
+            name="description"
+            content="Najwazniejsze informacje o mnie oraz moim doswiadczeniu jako trener personalny"
+          />
+          <link rel="cannonical" href="/o_mnie" />
+        </Helmet>
+      ) : null}
       <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
