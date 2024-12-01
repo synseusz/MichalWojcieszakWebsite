@@ -67,7 +67,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             <FBIcon />
           </a>
           <a
-            href="https://www.instagram.com/call.me.mr.king/"
+            href="https://www.instagram.com/protrainer.michal/"
             target="_blank"
             rel="noreferrer"
           >

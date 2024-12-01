@@ -168,7 +168,7 @@ const TrainingPlans = () => {
                   property="text"
                   duration={1000}
                 >
-                  <Price>150 zł</Price>
+                  <Price>200 zł</Price>
                 </Gradient>
               </PlanCard2>
             </Gradient>
@@ -189,7 +189,7 @@ const TrainingPlans = () => {
                   property="text"
                   duration={1000}
                 >
-                  <Price>600 zł</Price>
+                  <Price>800 zł</Price>
                 </Gradient>
               </PlanCard2>
             </Gradient>
@@ -207,7 +207,7 @@ const TrainingPlans = () => {
                   property="text"
                   duration={1000}
                 >
-                  <Price>150 zł</Price>
+                  <Price>200 zł</Price>
                 </Gradient>
               </PlanCard2>
             </Gradient>

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import {
   Nav,
@@ -107,7 +106,7 @@ const Navbar = ({ toggle }) => {
               <FBIcon />
             </a>
             <a
-              href="https://www.instagram.com/call.me.mr.king/"
+              href="https://www.instagram.com/protrainer.michal/"
               target="_blank"
               rel="noreferrer"
             >
