@@ -67,7 +67,7 @@ const TrainingPlans = () => {
                 property="text"
                 duration={1000}
               >
-                <Price>150 zł</Price>
+                <Price>160 zł</Price>
               </Gradient>
             </PlanCard>
           </Gradient>
@@ -85,7 +85,7 @@ const TrainingPlans = () => {
                 property="text"
                 duration={1000}
               >
-                <Price>750 zł</Price>
+                <Price>900 zł</Price>
               </Gradient>
             </PlanCard>
           </Gradient>
@@ -103,7 +103,7 @@ const TrainingPlans = () => {
                 property="text"
                 duration={1000}
               >
-                <Price>1400 zł</Price>
+                <Price>1680 zł</Price>
               </Gradient>
             </PlanCard>
           </Gradient>
@@ -121,7 +121,7 @@ const TrainingPlans = () => {
                 property="text"
                 duration={1000}
               >
-                <Price>2750 zł</Price>
+                <Price>3250 zł</Price>
               </Gradient>
             </PlanCard>
           </Gradient>
@@ -139,7 +139,7 @@ const TrainingPlans = () => {
                 property="text"
                 duration={1000}
               >
-                <Price>5000 zł</Price>
+                <Price>6000 zł</Price>
               </Gradient>
             </PlanCard>
           </Gradient>

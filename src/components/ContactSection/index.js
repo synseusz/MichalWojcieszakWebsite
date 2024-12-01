@@ -26,14 +26,9 @@ import {
   Link,
   ContactWrapper,
   IMGWrap,
-  IMG,
-  BooksyLinkContainer,
-  BooksyTxt,
-  BooksyIcon,
+  IMG
 } from "./ContactSectionElements";
 import GoogleMapElement from "./GoogleMap";
-
-import booksyIcon2 from "../../images/booksyIcon2.png";
 
 const ContactSection2 = ({
   lightBg,
@@ -151,23 +146,13 @@ const ContactSection2 = ({
                     <FBIcon />
                   </a>
                   <a
-                    href="https://www.instagram.com/call.me.mr.king/"
+                    href="https://www.instagram.com/protrainer.michal/"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <IGIcon />
                   </a>
                 </SocialsWrapper>
-                <BooksyLinkContainer>
-                  <BooksyTxt>Umów sie na trening!</BooksyTxt>
-                  <a
-                    href="https://booksy.com/pl-pl/137206_michal-wojcieszak-treningi-personalne_trening-i-dieta_13750_wroclaw#ba_s=sh_1"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <BooksyIcon src={booksyIcon2} />
-                  </a>
-                </BooksyLinkContainer>
               </Column2>
             </Row>
           </ContactInfoWrapper>
